@@ -1,0 +1,963 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='X-UA-Compatible' content='ie=edge')
+        title DOTA MONEY 2
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet')
+        link(rel='stylesheet' href='stylesheets/nouislider.min.css')
+        link(rel='stylesheet' href='stylesheets/style.css')
+        link(rel='stylesheet' href='./stylesheets/media.css')
+        // <link rel="stylesheet" href="materialize/css/materialize.css">
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.5/socket.io.min.js' integrity='sha512-L9L4VhE0D58fCxtJiYDHbIzSVfNGY24rhQPWTZPschTVKLpucPsLeT0FSjfnylLYARalTQqgwXsjjhi+wUTwIw==' crossorigin='anonymous')
+        link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
+    body
+        header
+            nav#nav
+                .container
+                    div(id='nav_left')
+                        #menuToggle
+                            span(class='first_span')
+                            span(class='second_span')
+                            span.third-span
+
+
+    .telephone-menu
+        ul
+            a#home-list(href='index.html')
+                li Home
+            a(href='index.html')
+                li Bots
+            a(href='faq.html')
+                li Faq
+    .close-image
+        img.hidden-close(src='./images/close.png')
+    .flexer
+        #logo
+            a(href='./index.html')
+                img(src='images/logo.png' alt='')
+div(id='nav_right')
+    .flexer
+        ul#menu
+            .listItems
+                li.menu-item
+                    a(href='index.html')
+                        | home
+                li.menu-item
+                    a(href='index.html')
+                        | bots
+                li.menu-item
+                    a(href='faq.html')
+                        | faq
+        #profile
+            a(href='https://dota2money.ru/?login')
+                button.btn-orange(id='log_btn')
+                    | log in via steam
+#welcome
+    .container
+        .flexer
+            .texts
+                p#first
+                    | the most profitable skin trade
+                p#second
+                    | dota 2 trading bot
+                p#third
+                    | constructed for benefit
+            #arrow
+                a(href='#mainContent')
+                    img(src='images/drop.png')
+main
+    #toolBlock.block
+        .container
+            .blockContainer
+                .blockContent
+                    ul.list(style='align-items: baseline;')
+                        li.listItem
+                            .image
+                                img(src='images/fast.png')
+                            .title
+                                | fast
+                            .description
+                                | trade
+                        li.listItem
+                            .image
+                                img(src='images/low.png')
+                            .title
+                                | low
+                            .description
+                                | commision
+                        li.listItem
+                            .image
+                                img(src='images/safety.png')
+                            .title
+                                | safety
+                            .description
+                                | guaranteed
+                        li.listItem
+                            .image
+                                img(src='images/wide.png')
+                            .title
+                                | wide
+                            .description
+                                | skin supply
+                        li.listItem
+                            .image
+                                img(src='images/onlinesupport.png')
+                            .title
+                                | online
+                            .description
+                                | support
+    .block(id='trading_steps')
+        .close
+            button.btn
+                span.fa.fa-close
+        .container
+            .blockTitle
+                .title
+                    | trading steps
+                .description
+                    | did not understand how to use the site? see
+                    a(href='/faq') the hints
+                    // or <a href="#">watch video</a>.
+            .blockContent
+                .blockContainer
+                    ul.steps
+                        li.step
+                            .count
+                                | 1
+                            .desc
+                                | log in via steam
+                        li.arrow
+                            img(src='images/drop.png')
+                        li.step
+                            .count
+                                | 2
+                            .desc
+                                | enter via trade-offer link
+                        li.arrow
+                            img(src='images/drop.png')
+                        li.step
+                            .count
+                                | 3
+                            .desc
+                                | select your skins
+                        li.arrow
+                            img(src='images/drop.png')
+                        li.step
+                            .count
+                                | 4
+                            .desc
+                                | select skins on our bots
+                        li.arrow
+                            img(src='images/drop.png')
+                        li.step
+                            .count
+                                | 5
+                            .desc
+                                | confirm trade
+    #iDontKnow.block
+        .close
+            button.btn
+                span.fa.fa-close
+        .container
+            #dontKnowLeft
+                .text
+                    | trade-offer link
+                .flexer
+                    form#tradeOfferLinkForm(action='' method='')
+                        input#inputText(type='text' name='trade_offer_link')
+                        button.btn-purple(type='submit' id='trade_offer_link_submit_button') update
+            #dontKnowRight
+                .flexer
+                    a(target='_blank' href='https://steamcommunity.com/id/me/tradeoffers/privacy#trade_offer_access_url')
+                        button.btn-outline
+                            | where is this link located ?
+                    a(href='/faq')
+                        button.btn-outline
+                            | information
+    .verticalScroll
+        .scrollContent
+    #mainContent.block
+        .container
+            div(id='main_left')
+                .flexer
+                    #offer.mainBlock
+                        .mainHeader
+                            .headerLeft
+                                span.fa.fa-shopping-bag.icon
+                                span.title offer
+                            .headerRight
+                                | $0.00
+                        .mainContent
+                            .abs
+                                .text
+                                    | please, select your offered skin
+                                .icon
+                                    img(src='images/drop.png')
+                    #begin.mainBlock(style='\
+                                min-height: 800px;\
+                            ')
+                        .mainHeader
+                            .headerLeft
+                                input.headerSearch(type='text')
+                            .headerRight
+                                ul.menu
+                                    li.item
+                                        a(href='#')
+                                            span.text order by
+                                            span.dropArrow.icon
+                                    li.item
+                                        a(href='#')
+                                            span.fa.fa-refresh
+                                            span.text refresh
+                        .mainContent
+                            #remove-absolute.abs
+                                .tradingPosition
+                                    div(class='text abs-text_content')
+                                        p.begin-trading TO BEGIN TRADING SKINS, PLEASE
+                                    .buttons
+                                        button.btn-outline(style='margin-top: 4em; margin-bottom: 2em;')
+                                            | sign in through steam
+                                    .text
+                                        | remember to set your inventory to
+                                        a(href='#') public
+                                    .trading-steps
+                                        img(src='images/step1.png')
+                                        img(src='images/rightarrow.png')
+                                        img(src='images/step2.png')
+                                        img(src='images/rightarrow.png')
+                                        img(src='images/step3.png')
+                                        img(src='images/rightarrow.png')
+                                        img(src='images/step4.png')
+                                        img(src='images/rightarrow.png')
+                                        img(src='images/step5.png')
+            div(id='main_center' style='\
+                            background-color: rgb(233,228,238);\
+                            border-radius: 8px;\
+                            display: flex;\
+                        ')
+                .flexer(style='\
+                            display:  flex;\
+                            justify-content:  space-between;\
+                        ')
+                    #positioning
+                        // buttons
+                        .centerButtons
+                            button#trade-button.btn-purple
+                                | TRADE
+                            button#autosellect-button.btn-orange
+                                | AUTOSELECT
+                        // end buttons
+                        // bot filters
+                        .bot-filters
+                            p Bot filters
+                        // end bot filters
+                        // numbers
+                        #numbers
+                            p#one 0
+                            span.nP -
+                            p#two 1000
+                        // end numbers
+                        // type range
+                        .range
+                            section
+                                span.tooltip
+                                #slider4.slider.type2(oninput='funRange()')
+                                span.volume
+                        // end type range
+                        // dash
+                        .dash
+                            .bg
+                                p Character
+                                img(src='images/plus.png')
+                            .bg
+                                p Rarity
+                                img(src='images/arrowDown.png')
+                            .bg
+                                p Type
+                                img(src='images/arrowDown.png')
+                        // end dash
+                        // board
+                        .board
+                            .switcher
+                                // Rectangular switch
+                                .switchElem
+                                    label.switch
+                                        input#rr3(type='checkbox' onchange='funSwitch3()')
+                                        span.slider2.round
+                                .switchElem
+                                    label.switch
+                                        input#rr4(type='checkbox' onchange='funSwitch4()')
+                                        span.slider2.round
+                            .checked
+                                label.containerCheck
+                                    input#pole3(type='radio')
+                                    span.checkmark
+                                label.containerCheck
+                                    input#pole4(type='radio')
+                                    span.checkmark
+                            .names
+                                p Exalted
+                                p Inscribed
+                        // end board
+                        // more filters
+                        .moreFilters.bg.dash
+                            p More Filters
+                            img(src='images/arrowDown.png')
+                        .resetFilters
+                            p RESET FILTERS
+                        // /\/\more filters
+                        .comissions
+                            .comP Comissions
+                            .comBoard
+                                .item
+                                    p.light Arcana:
+                                    .itemProcent
+                                        p.bold 99%
+                                        img(src='images/arrows.png')
+                                        p.bold 106%
+                                .item
+                                    p.light Immortal:
+                                    .itemProcent
+                                        p.bold 99%
+                                        img(src='images/arrows.png')
+                                        p.bold 106%
+                                .item
+                                    p.light Good:
+                                    .itemProcent
+                                        p.bold 99%
+                                        img(src='images/arrows.png')
+                                        p.bold 106%
+                                .item
+                                    p.light Skins:
+                                    .itemProcent
+                                        p.bold 99%
+                                        img(src='images/arrows.png')
+                                        p.bold 106%
+                                .item
+                                    p.light Misc:
+                                    .itemProcent
+                                        p.bold 99%
+                                        img(src='images/arrows.png')
+                                        p.bold 106%
+                        .bonus
+                            p 2% BONUS
+                            p.not-activated NOT ACTIVATED
+                            p Add
+                                span.orange “DOTA2.MONEY”
+                                | to your Steam profile name and log in via Steam
+            div(id='main_right')
+                .flexer
+                    #received.mainBlock
+                        .mainHeader
+                            .headerLeft
+                                span.title $0.00
+                            .headerRight
+                                span.fa.fa-shopping-bag.icon
+                                | received
+                        .mainContent
+                            #dropContainer.abs.dropzone.flex-center(ondragover='allowDrop(event)' ondrop='drop(event)')
+    #hiddenText.text
+        | please, select your offered skin
+    #hiddenIco.icon
+        img(src='images/drop.png')
+#skins.mainBlock(style='min-height: 800px;')
+    .mainHeader
+        .headerLeft
+            .title
+                span.icon.fa.fa-refresh
+                | refresh
+            .bots.drop.menu
+                a(href='#')
+                    .text see all bots
+                    .icon.dropArrow
+    // DRAG  AND DROP
+    .mainContent.dragzoneContainer(id='new_grid')
+        .dragzone
+            .imgPad
+                .stylesOfImg
+                    div title
+                    .second-image
+                        img#dragelement1(src='./images/drag-image.jpg' ondragstart='dragStart(event)')
+                    div price
+            .hidden-cotainer
+                .hover-div-hidden
+                    div
+                        h1 DRAGONCLAW
+                            br
+                            | HOOK
+                        p Used By: pudge
+                        p Slot: Weapon
+        .dragzone
+            .imgPad
+                .stylesOfImg
+                    div title
+                    .second-image
+                        img#dragelement2.imgnew(src='./images/drag-image.jpg' ondragstart='dragStart(event)')
+                    div price
+            .hidden-cotainer
+                .hover-div-hidden
+                    div
+                        h1 DRAGONCLAW
+                            br
+                            | HOOK
+                        p Used By: pudge
+                        p Slot: Weapon
+        .dragzone
+            .imgPad
+                .stylesOfImg
+                    div title
+                    .second-image
+                        img#dragelement3(src='./images/drag-image.jpg' ondragstart='dragStart(event)')
+                    div price
+            .hidden-cotainer
+                .hover-div-hidden
+                    div
+                        h1 DRAGONCLAW
+                            br
+                            | HOOK
+                        p Used By: pudge
+                        p Slot: Weapon
+        .dragzone
+            .imgPad
+                .stylesOfImg
+                    div title
+                    .second-image
+                        img#dragelement4(src='./images/drag-image.jpg' ondragstart='dragStart(event)')
+                    div price
+            .hidden-cotainer
+                .hover-div-hidden
+                    div
+                        h1 DRAGONCLAW
+                            br
+                            | HOOK
+                        p Used By: pudge
+                        p Slot: Weapon
+        .dragzone
+            .imgPad
+                .stylesOfImg
+                    div title
+                    .second-image
+                        img#dragelement5(src='./images/drag-image.jpg' ondragstart='dragStart(event)')
+                    div price
+            .hidden-cotainer
+                .hover-div-hidden
+                    div
+                        h1 DRAGONCLAW
+                            br
+                            | HOOK
+                        p Used By: pudge
+                        p Slot: Weapon
+        .dragzone
+            .imgPad
+                .stylesOfImg
+                    div title
+                    .second-image
+                        img#dragelement6(src='./images/drag-image.jpg' ondragstart='dragStart(event)')
+                    div price
+            .hidden-cotainer
+                .hover-div-hidden
+                    div
+                        h1 DRAGONCLAW
+                            br
+                            | HOOK
+                        p Used By: pudge
+                        p Slot: Weapon
+        .dragzone
+            .imgPad
+                .stylesOfImg
+                    div title
+                    .second-image
+                        img#dragelement7(src='./images/drag-image.jpg' ondragstart='dragStart(event)')
+                    div price
+            .hidden-cotainer
+                .hover-div-hidden
+                    div
+                        h1 DRAGONCLAW
+                            br
+                            | HOOK
+                        p Used By: pudge
+                        p Slot: Weapon
+        .dragzone
+            .imgPad
+                .stylesOfImg
+                    div title
+                    .second-image
+                        img#dragelement8(src='./images/drag-image.jpg' ondragstart='dragStart(event)')
+                    div price
+            .hidden-cotainer
+                .hover-div-hidden
+                    div
+                        h1 DRAGONCLAW
+                            br
+                            | HOOK
+                        p Used By: pudge
+                        p Slot: Weapon
+        .dragzone
+            .imgPad
+                .stylesOfImg
+                    div title
+                    .second-image
+                        img#dragelement9(src='./images/drag-image.jpg' ondragstart='dragStart(event)')
+                    div price
+            .hidden-cotainer
+                .hover-div-hidden
+                    div
+                        h1 DRAGONCLAW
+                            br
+                            | HOOK
+                        p Used By: pudge
+                        p Slot: Weapon
+        .dragzone
+            .imgPad
+                .stylesOfImg
+                    div title
+                    .second-image
+                        img#dragelement10(src='./images/drag-image.jpg' ondragstart='dragStart(event)')
+                    div price
+            .hidden-cotainer
+                .hover-div-hidden
+                    div
+                        h1 DRAGONCLAW
+                            br
+                            | HOOK
+                        p Used By: pudge
+                        p Slot: Weapon
+        .dragzone
+            .imgPad
+                .stylesOfImg
+                    div title
+                    .second-image
+                        img#dragelement11(src='./images/drag-image.jpg' ondragstart='dragStart(event)')
+                    div price
+            .hidden-cotainer
+                .hover-div-hidden
+                    div
+                        h1 DRAGONCLAW
+                            br
+                            | HOOK
+                        p Used By: pudge
+                        p Slot: Weapon
+        .dragzone
+            .imgPad
+                .stylesOfImg
+                    div title
+                    .second-image
+                        img#dragelement12(src='./images/drag-image.jpg' ondragstart='dragStart(event)')
+                    div price
+            .hidden-cotainer
+                .hover-div-hidden
+                    div
+                        h1 DRAGONCLAW
+                            br
+                            | HOOK
+                        p Used By: pudge
+                        p Slot: Weapon
+        .dragzone
+            .imgPad
+                .stylesOfImg
+                    div title
+                    .second-image
+                        img#dragelement13(src='./images/drag-image.jpg' ondragstart='dragStart(event)')
+                    div price
+            .hidden-cotainer
+                .hover-div-hidden
+                    div
+                        h1 DRAGONCLAW
+                            br
+                            | HOOK
+                        p Used By: pudge
+                        p Slot: Weapon
+        .dragzone
+            .imgPad
+                .stylesOfImg
+                    div title
+                    .second-image
+                        img#dragelement14(src='./images/drag-image.jpg' ondragstart='dragStart(event)')
+                    div price
+            .hidden-cotainer
+                .hover-div-hidden
+                    div
+                        h1 DRAGONCLAW
+                            br
+                            | HOOK
+                        p Used By: pudge
+                        p Slot: Weapon
+        .dragzone
+            .imgPad
+                .stylesOfImg
+                    div title
+                    .second-image
+                        img#dragelement15(src='./images/drag-image.jpg' ondragstart='dragStart(event)')
+                    div price
+            .hidden-cotainer
+                .hover-div-hidden
+                    div
+                        h1 DRAGONCLAW
+                            br
+                            | HOOK
+                        p Used By: pudge
+                        p Slot: Weapon
+        .dragzone
+            .imgPad
+                .stylesOfImg
+                    div title
+                    .second-image
+                        img#dragelement16(src='./images/drag-image.jpg' ondragstart='dragStart(event)')
+                    div price
+            .hidden-cotainer
+                .hover-div-hidden
+                    div
+                        h1 DRAGONCLAW
+                            br
+                            | HOOK
+                        p Used By: pudge
+                        p Slot: Weapon
+        .dragzone
+            .imgPad
+                .stylesOfImg
+                    div title
+                    .second-image
+                        img#dragelement17(src='./images/drag-image.jpg' ondragstart='dragStart(event)')
+                    div price
+            .hidden-cotainer
+                .hover-div-hidden
+                    div
+                        h1 DRAGONCLAW
+                            br
+                            | HOOK
+                        p Used By: pudge
+                        p Slot: Weapon
+        .dragzone
+            .imgPad
+                .stylesOfImg
+                    div title
+                    .second-image
+                        img#dragelement18(src='./images/drag-image.jpg' ondragstart='dragStart(event)')
+                    div price
+            .hidden-cotainer
+                .hover-div-hidden
+                    div
+                        h1 DRAGONCLAW
+                            br
+                            | HOOK
+                        p Used By: pudge
+                        p Slot: Weapon
+        .dragzone
+            .imgPad
+                .stylesOfImg
+                    div title
+                    .second-image
+                        img#dragelement19(src='./images/drag-image.jpg' ondragstart='dragStart(event)')
+                    div price
+            .hidden-cotainer
+                .hover-div-hidden
+                    div
+                        h1 DRAGONCLAW
+                            br
+                            | HOOK
+                        p Used By: pudge
+                        p Slot: Weapon
+        .dragzone
+            .imgPad
+                .stylesOfImg
+                    div title
+                    .second-image
+                        img#dragelement20(src='./images/drag-image.jpg' ondragstart='dragStart(event)')
+                    div price
+            .hidden-cotainer
+                .hover-div-hidden
+                    div
+                        h1 DRAGONCLAW
+                            br
+                            | HOOK
+                        p Used By: pudge
+                        p Slot: Weapon
+        .dragzone
+            .imgPad
+                .stylesOfImg
+                    div title
+                    .second-image
+                        img#dragelement20(src='./images/drag-image.jpg' ondragstart='dragStart(event)')
+                    div price
+            .hidden-cotainer
+                .hover-div-hidden
+                    div
+                        h1 DRAGONCLAW
+                            br
+                            | HOOK
+                        p Used By: pudge
+                        p Slot: Weapon
+        .dragzone
+            .imgPad
+                .stylesOfImg
+                    div title
+                    .second-image
+                        img#dragelement20(src='./images/drag-image.jpg' ondragstart='dragStart(event)')
+                    div price
+            .hidden-cotainer
+                .hover-div-hidden
+                    div
+                        h1 DRAGONCLAW
+                            br
+                            | HOOK
+                        p Used By: pudge
+                        p Slot: Weapon
+        .dragzone
+            .imgPad
+                .stylesOfImg
+                    div title
+                    .second-image
+                        img#dragelement20(src='./images/drag-image.jpg' ondragstart='dragStart(event)')
+                    div price
+            .hidden-cotainer
+                .hover-div-hidden
+                    div
+                        h1 DRAGONCLAW
+                            br
+                            | HOOK
+                        p Used By: pudge
+                        p Slot: Weapon
+        .dragzone
+            .imgPad
+                .stylesOfImg
+                    div title
+                    .second-image
+                        img#dragelement20(src='./images/drag-image.jpg' ondragstart='dragStart(event)')
+                    div price
+            .hidden-cotainer
+                .hover-div-hidden
+                    div
+                        h1 DRAGONCLAW
+                            br
+                            | HOOK
+                        p Used By: pudge
+                        p Slot: Weapon
+#statistics.block
+    .container
+        .blockTitle
+            .title
+                | our statistics
+            .description
+                | fairness is our priority
+        .blockContent
+            .blockContainer
+                ul.statsList
+                    li.stat
+                        .count
+                            | 567254234
+                        .description
+                            | successful trades
+                    li.stat
+                        #online.count
+                            | 3643
+                        .description
+                            | online users
+                    li.stat
+                        .count
+                            | 7242
+                        .description
+                            | loyal users
+                    li.stat
+                        .count
+                            | 545
+                        .description
+                            | new users today
+footer
+    .container
+        .flexer
+            div(id='footer_left')
+                .logo
+                    a.margin-class(href='/')
+                        img(src='images/logo.png')
+        .flexer
+            div(id='footer_center')
+                div
+                    | ©2016-2017 “DOTA2MONEY” ALL RIGHTS RESERVED
+        .flexer
+            div(id='footer_right')
+                ul.partners
+                    li.partner
+                        .flexer
+                            a(href='#')
+                                img(src='images/termsConditions.png' alt='')
+.modal.yii(id='select_char' style='display:none')
+    div(class='modal_window')
+        .close.modaler
+            button.btn
+                span.fa.fa-close
+        .modalTitle
+            button.btn-outline(id='select_char_reset')
+                | reset filters
+            .title
+                | select a character
+        .modalContent
+            table(border='1')
+                thead
+                    tr
+                        th abc
+                        th defghi
+                        th jklm
+                        th nopqr
+                        th st
+                        th tuvwz
+                tbody
+                    tr
+                        td abandon
+                        td crystal maiden
+                        td juggernaut
+                        td nega siren
+                        td sand king
+                        td tkinter
+                    tr
+                        td abandon
+                        td crystal maiden
+                        td juggernaut
+                        td nega siren
+                        td sand king
+                        td tkinter
+                    tr
+                        td abandon
+                        td crystal maiden
+                        td juggernaut
+                        td nega siren
+                        td sand king
+                        td tkinter
+                    tr
+                        td abandon
+                        td crystal maiden
+                        td juggernaut
+                        td nega siren
+                        td sand king
+                        td tkinter
+                    tr
+                        td abandon
+                        td crystal maiden
+                        td juggernaut
+                        td nega siren
+                        td sand king
+                        td tkinter
+                    tr
+                        td abandon
+                        td crystal maiden
+                        td juggernaut
+                        td nega siren
+                        td sand king
+                        td tkinter
+                    tr
+                        td abandon
+                        td crystal maiden
+                        td juggernaut
+                        td nega siren
+                        td sand king
+                        td tkinter
+.modal.yii(id='waiting_for_a_bot' style='display: none;')
+    div(class='modal_window')
+        .close.modaler
+            button.btn
+                span.fa.fa-close
+        .modalTitle
+            .title
+                | waiting for a bot
+            .description
+                | your trade request is being proccessed
+        .modalContent
+            ul.list
+                li.listItem
+                    .icon
+                        span.fa.fa-check-circle-o
+                    .text
+                        | get offer
+                li.listItem
+                    .icon
+                        span.fa.fa-check-circle-o
+                    .text
+                        | validate offer
+                li.listItem
+                    .icon
+                        span.fa.fa-check-circle-o
+                    .text
+                        | send offer
+                li.listItem
+                    .icon
+                        span.fa.fa-check-circle-o
+                    .text
+                        | mobile confirmation
+            .message
+                | your trade offer is ready
+            .footer
+                .flexer
+                    button.btn-purple
+                        | confirm in browser
+                    button.btn-orange
+                        | confirm in steam
+.modal.yii(id='bots_list' style='display:none;')
+    div(class='modal_window')
+        .close.modaler
+            button.btn
+                span.fa.fa-close
+        .modalTitle
+            .title
+                | bots list
+            .description
+                | send us your own offer. we will check it automatically
+        .modalContent
+            table(border='1')
+                thead
+                    tr
+                        th number
+                        th bot name
+                        th profile
+                        th trade link
+                tbody
+                    tr
+                        td #1
+                        td bot #1
+                        td
+                            button.btn-purple
+                                | view bot profile
+                        td
+                            button.btn-orange
+                                | get a trade link
+                    tr
+                        td #2
+                        td bot #2
+                        td
+                            button.btn-purple
+                                | view bot profile
+                        td
+                            button.btn-orange
+                                | get a trade link
+                    tr
+                        td #3
+                        td bot #3
+                        td
+                            button.btn-purple
+                                | view bot profile
+                        td
+                            button.btn-orange
+                                | get a trade link
+                    tr
+                        td #4
+                        td bot #4
+                        td
+                            button.btn-purple
+                                | view bot profile
+                        td
+                            button.btn-orange
+                                | get a trade link
+// Compiled and minified CSS
+// Compiled and minified JavaScript
+script(src='scripts/wNumb.js')
+script(src='scripts/nouislider.min.js')
+script(src='materialize/js/materialize.js')
+script(src='https://code.jquery.com/ui/1.10.3/jquery-ui.js')
+script(src='scripts/script.js')
+script(src='scripts/dnd.js')
+script.
+    const socket = io('https://dota2money.ru:2053');
+    socket.on('online', function (data) {
+        $('#online').text(data + 70);
+    });

@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOTA MONEY 2</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/nouislider.min.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="./stylesheets/media.css">
+    <!-- <link rel="stylesheet" href="materialize/css/materialize.css">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.5/socket.io.min.js" integrity="sha512-L9L4VhE0D58fCxtJiYDHbIzSVfNGY24rhQPWTZPschTVKLpucPsLeT0FSjfnylLYARalTQqgwXsjjhi+wUTwIw==" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav id="nav">
+        <div class="container">
+          <div id="nav_left">
+            <div id="menuToggle"><span class="first_span"></span><span class="second_span"></span><span class="third-span"></span></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
+  <div class="telephone-menu">
+    <ul><a id="home-list" href="index.html">
+        <li>Home</li></a><a href="index.html">
+        <li>Bots</li></a><a href="faq.html">
+        <li>Faq</li></a></ul>
+  </div>
+  <div class="close-image"><img class="hidden-close" src="./images/close.png"></div>
+  <div class="flexer">
+    <div id="logo"><a href="./index.html"><img src="images/logo.png" alt=""></a></div>
+  </div>
+</html>
+<div id="nav_right">
+  <div class="flexer">
+    <ul id="menu">
+      <div class="listItems">
+        <li class="menu-item"><a href="index.html">home</a></li>
+        <li class="menu-item"><a href="index.html">bots</a></li>
+        <li class="menu-item"><a href="faq.html">faq</a></li>
+      </div>
+    </ul>
+    <div id="profile"><a href="https://dota2money.ru/?login">
+        <button class="btn-orange" id="log_btn">log in via steam</button></a></div>
+  </div>
+</div>
+<div id="welcome">
+  <div class="container">
+    <div class="flexer">
+      <div class="texts">
+        <p id="first">the most profitable skin trade</p>
+        <p id="second">dota 2 trading bot</p>
+        <p id="third">constructed for benefit</p>
+      </div>
+      <div id="arrow"><a href="#mainContent"><img src="images/drop.png"></a></div>
+    </div>
+  </div>
+</div>
+<main>
+  <div class="block" id="toolBlock">
+    <div class="container">
+      <div class="blockContainer">
+        <div class="blockContent">
+          <ul class="list" style="align-items: baseline;">
+            <li class="listItem">
+              <div class="image"><img src="images/fast.png"></div>
+              <div class="title">fast</div>
+              <div class="description">trade</div>
+            </li>
+            <li class="listItem">
+              <div class="image"><img src="images/low.png"></div>
+              <div class="title">low</div>
+              <div class="description">commision</div>
+            </li>
+            <li class="listItem">
+              <div class="image"><img src="images/safety.png"></div>
+              <div class="title">safety</div>
+              <div class="description">guaranteed</div>
+            </li>
+            <li class="listItem">
+              <div class="image"><img src="images/wide.png"></div>
+              <div class="title">wide</div>
+              <div class="description">skin supply</div>
+            </li>
+            <li class="listItem">
+              <div class="image"><img src="images/onlinesupport.png"></div>
+              <div class="title">online</div>
+              <div class="description">support</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="block" id="trading_steps">
+    <div class="close">
+      <button class="btn"><span class="fa fa-close"></span></button>
+    </div>
+    <div class="container">
+      <div class="blockTitle">
+        <div class="title">trading steps</div>
+        <div class="description">did not understand how to use the site? see<a href="/faq">the hints</a>
+          <!-- or <a href="#">watch video</a>.-->
+        </div>
+      </div>
+      <div class="blockContent">
+        <div class="blockContainer">
+          <ul class="steps">
+            <li class="step">
+              <div class="count">1</div>
+              <div class="desc">log in via steam</div>
+            </li>
+            <li class="arrow"><img src="images/drop.png"></li>
+            <li class="step">
+              <div class="count">2</div>
+              <div class="desc">enter via trade-offer link</div>
+            </li>
+            <li class="arrow"><img src="images/drop.png"></li>
+            <li class="step">
+              <div class="count">3</div>
+              <div class="desc">select your skins</div>
+            </li>
+            <li class="arrow"><img src="images/drop.png"></li>
+            <li class="step">
+              <div class="count">4</div>
+              <div class="desc">select skins on our bots</div>
+            </li>
+            <li class="arrow"><img src="images/drop.png"></li>
+            <li class="step">
+              <div class="count">5</div>
+              <div class="desc">confirm trade</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="block" id="iDontKnow">
+    <div class="close">
+      <button class="btn"><span class="fa fa-close"></span></button>
+    </div>
+    <div class="container">
+      <div id="dontKnowLeft">
+        <div class="text">trade-offer link</div>
+        <div class="flexer">
+          <form id="tradeOfferLinkForm" action="" method="">
+            <input id="inputText" type="text" name="trade_offer_link">
+            <button class="btn-purple" type="submit" id="trade_offer_link_submit_button">update</button>
+          </form>
+        </div>
+      </div>
+      <div id="dontKnowRight">
+        <div class="flexer"><a target="_blank" href="https://steamcommunity.com/id/me/tradeoffers/privacy#trade_offer_access_url">
+            <button class="btn-outline">where is this link located ?</button></a><a href="/faq">
+            <button class="btn-outline">information</button></a></div>
+      </div>
+    </div>
+  </div>
+  <div class="verticalScroll">
+    <div class="scrollContent"></div>
+  </div>
+  <div class="block" id="mainContent">
+    <div class="container">
+      <div id="main_left">
+        <div class="flexer">
+          <div class="mainBlock" id="offer">
+            <div class="mainHeader">
+              <div class="headerLeft"><span class="fa fa-shopping-bag icon"></span><span class="title">offer</span></div>
+              <div class="headerRight">$0.00</div>
+            </div>
+            <div class="mainContent">
+              <div class="abs">
+                <div class="text">please, select your offered skin</div>
+                <div class="icon"><img src="images/drop.png"></div>
+              </div>
+            </div>
+          </div>
+          <div class="mainBlock" id="begin" style="                                min-height: 800px;                            ">
+            <div class="mainHeader">
+              <div class="headerLeft">
+                <input class="headerSearch" type="text">
+              </div>
+              <div class="headerRight">
+                <ul class="menu">
+                  <li class="item"><a href="#"><span class="text">order by</span><span class="dropArrow icon"></span></a></li>
+                  <li class="item"><a href="#"><span class="fa fa-refresh"></span><span class="text">refresh</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mainContent">
+              <div class="abs" id="remove-absolute">
+                <div class="tradingPosition">
+                  <div class="text abs-text_content">
+                    <p class="begin-trading">TO BEGIN TRADING SKINS, PLEASE</p>
+                  </div>
+                  <div class="buttons">
+                    <button class="btn-outline" style="margin-top: 4em; margin-bottom: 2em;">sign in through steam</button>
+                  </div>
+                  <div class="text">remember to set your inventory to<a href="#">public</a></div>
+                  <div class="trading-steps"><img src="images/step1.png"><img src="images/rightarrow.png"><img src="images/step2.png"><img src="images/rightarrow.png"><img src="images/step3.png"><img src="images/rightarrow.png"><img src="images/step4.png"><img src="images/rightarrow.png"><img src="images/step5.png"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="main_center" style="                            background-color: rgb(233,228,238);                            border-radius: 8px;                            display: flex;                        ">
+        <div class="flexer" style="                            display:  flex;                            justify-content:  space-between;                        ">
+          <div id="positioning">
+            <!-- buttons-->
+            <div class="centerButtons">
+              <button class="btn-purple" id="trade-button">TRADE</button>
+              <button class="btn-orange" id="autosellect-button">AUTOSELECT</button>
+            </div>
+            <!-- end buttons-->
+            <!-- bot filters-->
+            <div class="bot-filters">
+              <p>Bot filters</p>
+            </div>
+            <!-- end bot filters-->
+            <!-- numbers-->
+            <div id="numbers">
+              <p id="one">0</p><span class="nP">-</span>
+              <p id="two">1000</p>
+            </div>
+            <!-- end numbers-->
+            <!-- type range-->
+            <div class="range">
+              <section><span class="tooltip"></span>
+                <div class="slider type2" id="slider4" oninput="funRange()"></div><span class="volume"></span>
+              </section>
+            </div>
+            <!-- end type range-->
+            <!-- dash-->
+            <div class="dash">
+              <div class="bg">
+                <p>Character</p><img src="images/plus.png">
+              </div>
+              <div class="bg">
+                <p>Rarity</p><img src="images/arrowDown.png">
+              </div>
+              <div class="bg">
+                <p>Type</p><img src="images/arrowDown.png">
+              </div>
+            </div>
+            <!-- end dash-->
+            <!-- board-->
+            <div class="board">
+              <div class="switcher">
+                <!-- Rectangular switch-->
+                <div class="switchElem">
+                  <label class="switch">
+                    <input id="rr3" type="checkbox" onchange="funSwitch3()"><span class="slider2 round"></span>
+                  </label>
+                </div>
+                <div class="switchElem">
+                  <label class="switch">
+                    <input id="rr4" type="checkbox" onchange="funSwitch4()"><span class="slider2 round"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="checked">
+                <label class="containerCheck">
+                  <input id="pole3" type="radio"><span class="checkmark"></span>
+                </label>
+                <label class="containerCheck">
+                  <input id="pole4" type="radio"><span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="names">
+                <p>Exalted</p>
+                <p>Inscribed</p>
+              </div>
+            </div>
+            <!-- end board-->
+            <!-- more filters-->
+            <div class="moreFilters bg dash">
+              <p>More Filters</p><img src="images/arrowDown.png">
+            </div>
+            <div class="resetFilters">
+              <p>RESET FILTERS</p>
+            </div>
+            <!-- /\/\more filters-->
+            <div class="comissions">
+              <div class="comP">Comissions</div>
+              <div class="comBoard">
+                <div class="item">
+                  <p class="light">Arcana:</p>
+                  <div class="itemProcent">
+                    <p class="bold">99%</p><img src="images/arrows.png">
+                    <p class="bold">106%</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <p class="light">Immortal:</p>
+                  <div class="itemProcent">
+                    <p class="bold">99%</p><img src="images/arrows.png">
+                    <p class="bold">106%</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <p class="light">Good:</p>
+                  <div class="itemProcent">
+                    <p class="bold">99%</p><img src="images/arrows.png">
+                    <p class="bold">106%</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <p class="light">Skins:</p>
+                  <div class="itemProcent">
+                    <p class="bold">99%</p><img src="images/arrows.png">
+                    <p class="bold">106%</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <p class="light">Misc:</p>
+                  <div class="itemProcent">
+                    <p class="bold">99%</p><img src="images/arrows.png">
+                    <p class="bold">106%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bonus">
+              <p>2% BONUS</p>
+              <p class="not-activated">NOT ACTIVATED</p>
+              <p>Add<span class="orange">“DOTA2.MONEY”</span>to your Steam profile name and log in via Steam</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="main_right">
+        <div class="flexer">
+          <div class="mainBlock" id="received">
+            <div class="mainHeader">
+              <div class="headerLeft"><span class="title">$0.00</span></div>
+              <div class="headerRight"><span class="fa fa-shopping-bag icon"></span>received</div>
+            </div>
+            <div class="mainContent">
+              <div class="abs dropzone flex-center" id="dropContainer" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text" id="hiddenText">please, select your offered skin</div>
+  <div class="icon" id="hiddenIco"><img src="images/drop.png"></div>
+</main>
+<div class="mainBlock" id="skins" style="min-height: 800px;">
+  <div class="mainHeader">
+    <div class="headerLeft">
+      <div class="title"><span class="icon fa fa-refresh"></span>refresh</div>
+      <div class="bots drop menu"><a href="#">
+          <div class="text">see all bots</div>
+          <div class="icon dropArrow"></div></a></div>
+    </div>
+  </div>
+  <!-- DRAG  AND DROP-->
+  <div class="mainContent dragzoneContainer" id="new_grid">
+    <div class="dragzone">
+      <div class="imgPad">
+        <div class="stylesOfImg">
+          <div>title</div>
+          <div class="second-image"><img id="dragelement1" src="./images/drag-image.jpg" ondragstart="dragStart(event)"></div>
+          <div>price</div>
+        </div>
+      </div>
+      <div class="hidden-cotainer">
+        <div class="hover-div-hidden">
+          <div>
+            <h1>DRAGONCLAW<br>HOOK</h1>
+            <p>Used By: pudge</p>
+            <p>Slot: Weapon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dragzone">
+      <div class="imgPad">
+        <div class="stylesOfImg">
+          <div>title</div>
+          <div class="second-image"><img class="imgnew" id="dragelement2" src="./images/drag-image.jpg" ondragstart="dragStart(event)"></div>
+          <div>price</div>
+        </div>
+      </div>
+      <div class="hidden-cotainer">
+        <div class="hover-div-hidden">
+          <div>
+            <h1>DRAGONCLAW<br>HOOK</h1>
+            <p>Used By: pudge</p>
+            <p>Slot: Weapon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dragzone">
+      <div class="imgPad">
+        <div class="stylesOfImg">
+          <div>title</div>
+          <div class="second-image"><img id="dragelement3" src="./images/drag-image.jpg" ondragstart="dragStart(event)"></div>
+          <div>price</div>
+        </div>
+      </div>
+      <div class="hidden-cotainer">
+        <div class="hover-div-hidden">
+          <div>
+            <h1>DRAGONCLAW<br>HOOK</h1>
+            <p>Used By: pudge</p>
+            <p>Slot: Weapon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dragzone">
+      <div class="imgPad">
+        <div class="stylesOfImg">
+          <div>title</div>
+          <div class="second-image"><img id="dragelement4" src="./images/drag-image.jpg" ondragstart="dragStart(event)"></div>
+          <div>price</div>
+        </div>
+      </div>
+      <div class="hidden-cotainer">
+        <div class="hover-div-hidden">
+          <div>
+            <h1>DRAGONCLAW<br>HOOK</h1>
+            <p>Used By: pudge</p>
+            <p>Slot: Weapon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dragzone">
+      <div class="imgPad">
+        <div class="stylesOfImg">
+          <div>title</div>
+          <div class="second-image"><img id="dragelement5" src="./images/drag-image.jpg" ondragstart="dragStart(event)"></div>
+          <div>price</div>
+        </div>
+      </div>
+      <div class="hidden-cotainer">
+        <div class="hover-div-hidden">
+          <div>
+            <h1>DRAGONCLAW<br>HOOK</h1>
+            <p>Used By: pudge</p>
+            <p>Slot: Weapon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dragzone">
+      <div class="imgPad">
+        <div class="stylesOfImg">
+          <div>title</div>
+          <div class="second-image"><img id="dragelement6" src="./images/drag-image.jpg" ondragstart="dragStart(event)"></div>
+          <div>price</div>
+        </div>
+      </div>
+      <div class="hidden-cotainer">
+        <div class="hover-div-hidden">
+          <div>
+            <h1>DRAGONCLAW<br>HOOK</h1>
+            <p>Used By: pudge</p>
+            <p>Slot: Weapon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dragzone">
+      <div class="imgPad">
+        <div class="stylesOfImg">
+          <div>title</div>
+          <div class="second-image"><img id="dragelement7" src="./images/drag-image.jpg" ondragstart="dragStart(event)"></div>
+          <div>price</div>
+        </div>
+      </div>
+      <div class="hidden-cotainer">
+        <div class="hover-div-hidden">
+          <div>
+            <h1>DRAGONCLAW<br>HOOK</h1>
+            <p>Used By: pudge</p>
+            <p>Slot: Weapon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dragzone">
+      <div class="imgPad">
+        <div class="stylesOfImg">
+          <div>title</div>
+          <div class="second-image"><img id="dragelement8" src="./images/drag-image.jpg" ondragstart="dragStart(event)"></div>
+          <div>price</div>
+        </div>
+      </div>
+      <div class="hidden-cotainer">
+        <div class="hover-div-hidden">
+          <div>
+            <h1>DRAGONCLAW<br>HOOK</h1>
+            <p>Used By: pudge</p>
+            <p>Slot: Weapon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dragzone">
+      <div class="imgPad">
+        <div class="stylesOfImg">
+          <div>title</div>
+          <div class="second-image"><img id="dragelement9" src="./images/drag-image.jpg" ondragstart="dragStart(event)"></div>
+          <div>price</div>
+        </div>
+      </div>
+      <div class="hidden-cotainer">
+        <div class="hover-div-hidden">
+          <div>
+            <h1>DRAGONCLAW<br>HOOK</h1>
+            <p>Used By: pudge</p>
+            <p>Slot: Weapon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dragzone">
+      <div class="imgPad">
+        <div class="stylesOfImg">
+          <div>title</div>
+          <div class="second-image"><img id="dragelement10" src="./images/drag-image.jpg" ondragstart="dragStart(event)"></div>
+          <div>price</div>
+        </div>
+      </div>
+      <div class="hidden-cotainer">
+        <div class="hover-div-hidden">
+          <div>
+            <h1>DRAGONCLAW<br>HOOK</h1>
+            <p>Used By: pudge</p>
+            <p>Slot: Weapon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dragzone">
+      <div class="imgPad">
+        <div class="stylesOfImg">
+          <div>title</div>
+          <div class="second-image"><img id="dragelement11" src="./images/drag-image.jpg" ondragstart="dragStart(event)"></div>
+          <div>price</div>
+        </div>
+      </div>
+      <div class="hidden-cotainer">
+        <div class="hover-div-hidden">
+          <div>
+            <h1>DRAGONCLAW<br>HOOK</h1>
+            <p>Used By: pudge</p>
+            <p>Slot: Weapon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dragzone">
+      <div class="imgPad">
+        <div class="stylesOfImg">
+          <div>title</div>
+          <div class="second-image"><img id="dragelement12" src="./images/drag-image.jpg" ondragstart="dragStart(event)"></div>
+          <div>price</div>
+        </div>
+      </div>
+      <div class="hidden-cotainer">
+        <div class="hover-div-hidden">
+          <div>
+            <h1>DRAGONCLAW<br>HOOK</h1>
+            <p>Used By: pudge</p>
+            <p>Slot: Weapon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dragzone">
+      <div class="imgPad">
+        <div class="stylesOfImg">
+          <div>title</div>
+          <div class="second-image"><img id="dragelement13" src="./images/drag-image.jpg" ondragstart="dragStart(event)"></div>
+          <div>price</div>
+        </div>
+      </div>
+      <div class="hidden-cotainer">
+        <div class="hover-div-hidden">
+          <div>
+            <h1>DRAGONCLAW<br>HOOK</h1>
+            <p>Used By: pudge</p>
+            <p>Slot: Weapon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dragzone">
+      <div class="imgPad">
+        <div class="stylesOfImg">
+          <div>title</div>
+          <div class="second-image"><img id="dragelement14" src="./images/drag-image.jpg" ondragstart="dragStart(event)"></div>
+          <div>price</div>
+        </div>
+      </div>
+      <div class="hidden-cotainer">
+        <div class="hover-div-hidden">
+          <div>
+            <h1>DRAGONCLAW<br>HOOK</h1>
+            <p>Used By: pudge</p>
+            <p>Slot: Weapon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dragzone">
+      <div class="imgPad">
+        <div class="stylesOfImg">
+          <div>title</div>
+          <div class="second-image"><img id="dragelement15" src="./images/drag-image.jpg" ondragstart="dragStart(event)"></div>
+          <div>price</div>
+        </div>
+      </div>
+      <div class="hidden-cotainer">
+        <div class="hover-div-hidden">
+          <div>
+            <h1>DRAGONCLAW<br>HOOK</h1>
+            <p>Used By: pudge</p>
+            <p>Slot: Weapon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dragzone">
+      <div class="imgPad">
+        <div class="stylesOfImg">
+          <div>title</div>
+          <div class="second-image"><img id="dragelement16" src="./images/drag-image.jpg" ondragstart="dragStart(event)"></div>
+          <div>price</div>
+        </div>
+      </div>
+      <div class="hidden-cotainer">
+        <div class="hover-div-hidden">
+          <div>
+            <h1>DRAGONCLAW<br>HOOK</h1>
+            <p>Used By: pudge</p>
+            <p>Slot: Weapon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dragzone">
+      <div class="imgPad">
+        <div class="stylesOfImg">
+          <div>title</div>
+          <div class="second-image"><img id="dragelement17" src="./images/drag-image.jpg" ondragstart="dragStart(event)"></div>
+          <div>price</div>
+        </div>
+      </div>
+      <div class="hidden-cotainer">
+        <div class="hover-div-hidden">
+          <div>
+            <h1>DRAGONCLAW<br>HOOK</h1>
+            <p>Used By: pudge</p>
+            <p>Slot: Weapon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dragzone">
+      <div class="imgPad">
+        <div class="stylesOfImg">
+          <div>title</div>
+          <div class="second-image"><img id="dragelement18" src="./images/drag-image.jpg" ondragstart="dragStart(event)"></div>
+          <div>price</div>
+        </div>
+      </div>
+      <div class="hidden-cotainer">
+        <div class="hover-div-hidden">
+          <div>
+            <h1>DRAGONCLAW<br>HOOK</h1>
+            <p>Used By: pudge</p>
+            <p>Slot: Weapon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dragzone">
+      <div class="imgPad">
+        <div class="stylesOfImg">
+          <div>title</div>
+          <div class="second-image"><img id="dragelement19" src="./images/drag-image.jpg" ondragstart="dragStart(event)"></div>
+          <div>price</div>
+        </div>
+      </div>
+      <div class="hidden-cotainer">
+        <div class="hover-div-hidden">
+          <div>
+            <h1>DRAGONCLAW<br>HOOK</h1>
+            <p>Used By: pudge</p>
+            <p>Slot: Weapon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dragzone">
+      <div class="imgPad">
+        <div class="stylesOfImg">
+          <div>title</div>
+          <div class="second-image"><img id="dragelement20" src="./images/drag-image.jpg" ondragstart="dragStart(event)"></div>
+          <div>price</div>
+        </div>
+      </div>
+      <div class="hidden-cotainer">
+        <div class="hover-div-hidden">
+          <div>
+            <h1>DRAGONCLAW<br>HOOK</h1>
+            <p>Used By: pudge</p>
+            <p>Slot: Weapon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dragzone">
+      <div class="imgPad">
+        <div class="stylesOfImg">
+          <div>title</div>
+          <div class="second-image"><img id="dragelement20" src="./images/drag-image.jpg" ondragstart="dragStart(event)"></div>
+          <div>price</div>
+        </div>
+      </div>
+      <div class="hidden-cotainer">
+        <div class="hover-div-hidden">
+          <div>
+            <h1>DRAGONCLAW<br>HOOK</h1>
+            <p>Used By: pudge</p>
+            <p>Slot: Weapon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dragzone">
+      <div class="imgPad">
+        <div class="stylesOfImg">
+          <div>title</div>
+          <div class="second-image"><img id="dragelement20" src="./images/drag-image.jpg" ondragstart="dragStart(event)"></div>
+          <div>price</div>
+        </div>
+      </div>
+      <div class="hidden-cotainer">
+        <div class="hover-div-hidden">
+          <div>
+            <h1>DRAGONCLAW<br>HOOK</h1>
+            <p>Used By: pudge</p>
+            <p>Slot: Weapon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dragzone">
+      <div class="imgPad">
+        <div class="stylesOfImg">
+          <div>title</div>
+          <div class="second-image"><img id="dragelement20" src="./images/drag-image.jpg" ondragstart="dragStart(event)"></div>
+          <div>price</div>
+        </div>
+      </div>
+      <div class="hidden-cotainer">
+        <div class="hover-div-hidden">
+          <div>
+            <h1>DRAGONCLAW<br>HOOK</h1>
+            <p>Used By: pudge</p>
+            <p>Slot: Weapon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dragzone">
+      <div class="imgPad">
+        <div class="stylesOfImg">
+          <div>title</div>
+          <div class="second-image"><img id="dragelement20" src="./images/drag-image.jpg" ondragstart="dragStart(event)"></div>
+          <div>price</div>
+        </div>
+      </div>
+      <div class="hidden-cotainer">
+        <div class="hover-div-hidden">
+          <div>
+            <h1>DRAGONCLAW<br>HOOK</h1>
+            <p>Used By: pudge</p>
+            <p>Slot: Weapon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="block" id="statistics">
+  <div class="container">
+    <div class="blockTitle">
+      <div class="title">our statistics</div>
+      <div class="description">fairness is our priority</div>
+    </div>
+    <div class="blockContent">
+      <div class="blockContainer">
+        <ul class="statsList">
+          <li class="stat">
+            <div class="count">567254234</div>
+            <div class="description">successful trades</div>
+          </li>
+          <li class="stat">
+            <div class="count" id="online">3643</div>
+            <div class="description">online users</div>
+          </li>
+          <li class="stat">
+            <div class="count">7242</div>
+            <div class="description">loyal users</div>
+          </li>
+          <li class="stat">
+            <div class="count">545</div>
+            <div class="description">new users today</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container">
+    <div class="flexer">
+      <div id="footer_left">
+        <div class="logo"><a class="margin-class" href="/"><img src="images/logo.png"></a></div>
+      </div>
+    </div>
+    <div class="flexer">
+      <div id="footer_center">
+        <div>©2016-2017 “DOTA2MONEY” ALL RIGHTS RESERVED</div>
+      </div>
+    </div>
+    <div class="flexer">
+      <div id="footer_right">
+        <ul class="partners">
+          <li class="partner">
+            <div class="flexer"><a href="#"><img src="images/termsConditions.png" alt=""></a></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="modal yii" id="select_char" style="display:none">
+  <div class="modal_window">
+    <div class="close modaler">
+      <button class="btn"><span class="fa fa-close"></span></button>
+    </div>
+    <div class="modalTitle">
+      <button class="btn-outline" id="select_char_reset">reset filters</button>
+      <div class="title">select a character</div>
+    </div>
+    <div class="modalContent">
+      <table border="1">
+        <thead>
+          <tr>
+            <th>abc</th>
+            <th>defghi</th>
+            <th>jklm</th>
+            <th>nopqr</th>
+            <th>st</th>
+            <th>tuvwz</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>abandon</td>
+            <td>crystal maiden</td>
+            <td>juggernaut</td>
+            <td>nega siren</td>
+            <td>sand king</td>
+            <td>tkinter</td>
+          </tr>
+          <tr>
+            <td>abandon</td>
+            <td>crystal maiden</td>
+            <td>juggernaut</td>
+            <td>nega siren</td>
+            <td>sand king</td>
+            <td>tkinter</td>
+          </tr>
+          <tr>
+            <td>abandon</td>
+            <td>crystal maiden</td>
+            <td>juggernaut</td>
+            <td>nega siren</td>
+            <td>sand king</td>
+            <td>tkinter</td>
+          </tr>
+          <tr>
+            <td>abandon</td>
+            <td>crystal maiden</td>
+            <td>juggernaut</td>
+            <td>nega siren</td>
+            <td>sand king</td>
+            <td>tkinter</td>
+          </tr>
+          <tr>
+            <td>abandon</td>
+            <td>crystal maiden</td>
+            <td>juggernaut</td>
+            <td>nega siren</td>
+            <td>sand king</td>
+            <td>tkinter</td>
+          </tr>
+          <tr>
+            <td>abandon</td>
+            <td>crystal maiden</td>
+            <td>juggernaut</td>
+            <td>nega siren</td>
+            <td>sand king</td>
+            <td>tkinter</td>
+          </tr>
+          <tr>
+            <td>abandon</td>
+            <td>crystal maiden</td>
+            <td>juggernaut</td>
+            <td>nega siren</td>
+            <td>sand king</td>
+            <td>tkinter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="modal yii" id="waiting_for_a_bot" style="display: none;">
+  <div class="modal_window">
+    <div class="close modaler">
+      <button class="btn"><span class="fa fa-close"></span></button>
+    </div>
+    <div class="modalTitle">
+      <div class="title">waiting for a bot</div>
+      <div class="description">your trade request is being proccessed</div>
+    </div>
+    <div class="modalContent">
+      <ul class="list">
+        <li class="listItem">
+          <div class="icon"><span class="fa fa-check-circle-o"></span></div>
+          <div class="text">get offer</div>
+        </li>
+        <li class="listItem">
+          <div class="icon"><span class="fa fa-check-circle-o"></span></div>
+          <div class="text">validate offer</div>
+        </li>
+        <li class="listItem">
+          <div class="icon"><span class="fa fa-check-circle-o"></span></div>
+          <div class="text">send offer</div>
+        </li>
+        <li class="listItem">
+          <div class="icon"><span class="fa fa-check-circle-o"></span></div>
+          <div class="text">mobile confirmation</div>
+        </li>
+      </ul>
+      <div class="message">your trade offer is ready</div>
+      <div class="footer">
+        <div class="flexer">
+          <button class="btn-purple">confirm in browser</button>
+          <button class="btn-orange">confirm in steam</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal yii" id="bots_list" style="display:none;">
+  <div class="modal_window">
+    <div class="close modaler">
+      <button class="btn"><span class="fa fa-close"></span></button>
+    </div>
+    <div class="modalTitle">
+      <div class="title">bots list</div>
+      <div class="description">send us your own offer. we will check it automatically</div>
+    </div>
+    <div class="modalContent">
+      <table border="1">
+        <thead>
+          <tr>
+            <th>number</th>
+            <th>bot name</th>
+            <th>profile</th>
+            <th>trade link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#1</td>
+            <td>bot #1</td>
+            <td>
+              <button class="btn-purple">view bot profile</button>
+            </td>
+            <td>
+              <button class="btn-orange">get a trade link</button>
+            </td>
+          </tr>
+          <tr>
+            <td>#2</td>
+            <td>bot #2</td>
+            <td>
+              <button class="btn-purple">view bot profile</button>
+            </td>
+            <td>
+              <button class="btn-orange">get a trade link</button>
+            </td>
+          </tr>
+          <tr>
+            <td>#3</td>
+            <td>bot #3</td>
+            <td>
+              <button class="btn-purple">view bot profile</button>
+            </td>
+            <td>
+              <button class="btn-orange">get a trade link</button>
+            </td>
+          </tr>
+          <tr>
+            <td>#4</td>
+            <td>bot #4</td>
+            <td>
+              <button class="btn-purple">view bot profile</button>
+            </td>
+            <td>
+              <button class="btn-orange">get a trade link</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!-- Compiled and minified CSS-->
+<!-- Compiled and minified JavaScript-->
+<script src="scripts/wNumb.js"></script>
+<script src="scripts/nouislider.min.js"></script>
+<script src="materialize/js/materialize.js"></script>
+<script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="scripts/script.js"></script>
+<script src="scripts/dnd.js"></script>
+<script>
+  const socket = io('https://dota2money.ru:2053');
+  socket.on('online', function (data) {
+      $('#online').text(data + 70);
+  });
+</script>

@@ -1,0 +1,21 @@
+mixin drag(count,title,price,href, name,used,slot,image)
+    .dragzone
+        .imgPad
+            .stylesOfImg
+                div=title
+                .second-image
+                    img(id="dragelement"+count src=image ondragstart='dragStart(event)' alt=name)
+                div=price
+        .hidden-cotainer
+            .hover-div-hidden
+                div
+                    h1=name
+                    p="Used By: "+used
+                    p="Slot: "+slot
+#new_grid.mainContent.dragzoneContainer
+    -count=0;
+    each val in boot_items
+        -count=count+1
+        +drag(count,"title",val.lowest_price,href, val.trade_hash,"used","slot",val.image)
+
+

@@ -1,0 +1,319 @@
+extends layout
+block styles
+    link(rel="stylesheet", href="./stylesheets/style.css")
+    link(rel="stylesheet", href="./stylesheets/media.css")
+block content
+    main
+        #toolBlock.block
+            .container
+                .blockContainer
+                    .blockContent
+                        ul.list(style="align-items: baseline;")
+                            li.listItem
+                                .image
+                                    img(src="images/fast.png" alt="fast image")
+                                .title
+                                    | fast
+                                .description
+                                    | trade
+                            li.listItem
+                                .image
+                                    img(src="images/low.png" alt="Low Image")
+                                .title
+                                    | low
+                                .description
+                                    | commision
+                            li.listItem
+                                .image
+                                    img(src="images/safety.png" alt="Safety image")
+                                .title
+                                    | safety
+                                .description
+                                    | guaranteed
+                            li.listItem
+                                .image
+                                    img(src="images/wide.png" alt="Wide Image")
+                                .title
+                                    | wide
+                                .description
+                                    | skin supply
+                            li.listItem
+                                .image
+                                    img(src="images/onlinesupport.png" alt="Online support")
+                                .title
+                                    | online
+                                .description
+                                    | support
+        #trading_steps.block
+            .close
+                button.btn
+                    span.fa.fa-close
+            .container
+                .blockTitle
+                    .title
+                        | trading steps
+                    .description
+                        | did not understand how to use the site? see
+                        a(href="/faq") the hints
+                        // or <a href="#">watch video</a>.
+                .blockContent
+                    .blockContainer
+                        ul.steps
+                            li.step
+                                .count
+                                    | 1
+                                .desc
+                                    | log in via steam
+                            li.arrow
+                                img(src="images/drop.png" alt="drop image")
+                            li.step
+                                .count
+                                    | 2
+                                .desc
+                                    | enter via trade-offer link
+                            li.arrow
+                                img(src="images/drop.png" alt="drop image")
+                            li.step
+                                .count
+                                    | 3
+                                .desc
+                                    | select your skins
+                            li.arrow
+                                img(src="images/drop.png" alt="drop image")
+                            li.step
+                                .count
+                                    | 4
+                                .desc
+                                    | select skins on our bots
+                            li.arrow
+                                img(src="images/drop.png" alt="drop image")
+                            li.step
+                                .count
+                                    | 5
+                                .desc
+                                    | confirm trade
+        #iDontKnow.block
+            .close
+                button.btn
+                    span.fa.fa-close
+            .container
+                #dontKnowLeft
+                    .text
+                        | trade-offer link
+                    .flexer
+                        form#tradeOfferLinkForm(action="/?tradeOfferLinkForm=yes", method="GET")
+                            input#inputText(type="text", name="trade_offer_link")
+                            button#trade_offer_link_submit_button.btn-purple(type="submit") update
+                #dontKnowRight
+                    .flexer
+
+                            button.btn-outline(onclick="window.location.href = 'https://steamcommunity.com/id/me/tradeoffers/privacy#trade_offer_access_url';")
+                                | where is this link located ?
+
+                            button.btn-outline(onclick="window.location.href = '/faq';")
+                                | information
+        .verticalScroll
+            .scrollContent
+        #mainContent.block
+            .container
+                #main_left
+                    .flexer
+                        #offer.mainBlock
+                            .mainHeader
+                                .headerLeft
+                                    span.fa.fa-shopping-bag.icon
+                                    span.title offer
+                                .headerRight
+                                    | $0.00
+                            .mainContent
+                                .abs
+                                    .text
+                                        | please, select your offered skin
+                                    .icon
+                                        img(src="images/drop.png" alt="drop image")
+                        #begin.mainBlock(style="min-height: 800px;")
+                            .mainHeader
+                                .headerLeft
+                                    input.headerSearch(type="text")
+                                .headerRight
+                                    ul.menu
+                                        li.item
+                                            a(href="#")
+                                                span.text order by
+                                                span.dropArrow.icon
+                                        li.item
+                                            a(href="#")
+                                                span.fa.fa-refresh
+                                                span.text refresh
+                            .mainContent
+                                #remove-absolute.abs
+                                    .tradingPosition
+                                        .text.abs-text_content
+                                            p.begin-trading TO BEGIN TRADING SKINS, PLEASE
+                                        .buttons
+                                            button.btn-outline(style="margin-top: 4em; margin-bottom: 2em;")
+                                                | sign in through steam
+                                        .text
+                                            | remember to set your inventory to
+                                            a(href="#") public
+                                        .trading-steps
+                                            img(src="images/step1.png" alt="Step 1 image")
+                                            img(src="images/rightarrow.png" alt="Right arrow")
+                                            img(src="images/step2.png" alt="Step 2 image")
+                                            img(src="images/rightarrow.png" alt="Right arrow")
+                                            img(src="images/step3.png" alt="Step 3 image")
+                                            img(src="images/rightarrow.png" alt="Right arrow")
+                                            img(src="images/step4.png" alt="Step 4 image")
+                                            img(src="images/rightarrow.png" alt="Right arrow")
+                                            img(src="images/step5.png" alt="Step 5 image")
+                #main_center(style="background-color: rgb(233,228,238);border-radius: 8px;display: flex;")
+                    .flexer(style="display:  flex;justify-content:  space-between;")
+                        #positioning
+                            .centerButtons
+                                button#trade-button.btn-purple
+                                    | TRADE
+                                button#autosellect-button.btn-orange
+                                    | AUTOSELECT
+                            .bot-filters
+                                p Bot filters
+                            #numbers
+                                p#one 0
+                                span.nP -
+                                p#two 1000
+                            .range
+                                div
+                                    span.tooltip
+                                    #slider4.slider.type2(oninput="funRange()")
+                                    span.volume
+                            .dash
+                                .bg
+                                    p Character
+                                    img(src="images/plus.png" alt="Plus image")
+                                .bg
+                                    p Rarity
+                                    img(src="images/arrowDown.png" alt="ArrowDown image")
+                                .bg
+                                    p Type
+                                    img(src="images/arrowDown.png" alt="ArrowDown image")
+                            .board
+                                .switcher
+                                    .switchElem
+                                        label.switch
+                                            input#rr3(type="checkbox", onchange="funSwitch3()")
+                                            span.slider2.round
+                                    .switchElem
+                                        label.switch
+                                            input#rr4(type="checkbox", onchange="funSwitch4()")
+                                            span.slider2.round
+                                .checked
+                                    label.containerCheck
+                                        input#pole3(type="radio")
+                                        span.checkmark
+                                    label.containerCheck
+                                        input#pole4(type="radio")
+                                        span.checkmark
+                                .names
+                                    p Exalted
+                                    p Inscribed
+                            .moreFilters.bg.dash
+                                p More Filters
+                                img(src="images/arrowDown.png" alt="ArrowDown image")
+                            .resetFilters
+                                p RESET FILTERS
+                            .comissions
+                                .comP Comissions
+                                .comBoard
+                                    .item
+                                        p.light Arcana:
+                                        .itemProcent
+                                            p.bold 99%
+                                            img(src="images/arrows.png" alt="Arrows image")
+                                            p.bold 106%
+                                    .item
+                                        p.light Immortal:
+                                        .itemProcent
+                                            p.bold 99%
+                                            img(src="images/arrows.png" alt="Arrows image")
+                                            p.bold 106%
+                                    .item
+                                        p.light Good:
+                                        .itemProcent
+                                            p.bold 99%
+                                            img(src="images/arrows.png" alt="Arrows image")
+                                            p.bold 106%
+                                    .item
+                                        p.light Skins:
+                                        .itemProcent
+                                            p.bold 99%
+                                            img(src="images/arrows.png" alt="Arrows image")
+                                            p.bold 106%
+                                    .item
+                                        p.light Misc:
+                                        .itemProcent
+                                            p.bold 99%
+                                            img(src="images/arrows.png" alt="Arrows image")
+                                            p.bold 106%
+                            .bonus
+                                p 2% BONUS
+                                p.not-activated NOT ACTIVATED
+                                p
+                                    | Add
+                                    span.orange &ldquo;DOTA2.MONEY&rdquo;
+                                    |  to&nbsp;your Steam profile name and log in via Steam
+                #main_right
+                    .flexer
+                        #received.mainBlock
+                            .mainHeader
+                                .headerLeft
+                                    span.title $0.00
+                                .headerRight
+                                    span.fa.fa-shopping-bag.icon
+                                    |                                     received
+                            .mainContent
+                                #dropContainer.abs.dropzone.flex-center(ondragover="allowDrop(event)", ondrop="drop(event)")
+                                    #hiddenText.text
+                                        | please, select your offered skin
+                                    #hiddenIco.icon
+                                        img(src="images/drop.png" alt="Drop image")
+                        #skins.mainBlock(style="min-height: 800px;")
+                            .mainHeader
+                                .headerLeft
+                                    .title
+                                        span.icon.fa.fa-refresh
+                                        |                                         refresh
+                                    .bots.drop.menu
+                                        a(href="#")
+                                            .text see all bots
+                                            .icon.dropArrow
+                            // DRAG  AND DROP
+                            //include tradeboot/dragzoneContainer
+        #statistics.block
+            .container
+                .blockTitle
+                    .title
+                        | our statistics
+                    .description
+                        | fairness is our priority
+                .blockContent
+                    .blockContainer
+                        ul.statsList
+                            li.stat
+                                .count
+                                    | 567254234
+                                .description
+                                    | successful trades
+                            li.stat
+                                #online.count
+                                    | 3643
+                                .description
+                                    | online users
+                            li.stat
+                                .count
+                                    | 7242
+                                .description
+                                    | loyal users
+                            li.stat
+                                .count
+                                    | 545
+                                .description
+                                    | new users today

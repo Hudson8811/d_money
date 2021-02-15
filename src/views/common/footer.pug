@@ -1,0 +1,26 @@
+footer
+    .container
+        .flexer
+            #footer_left
+                .logo
+                    a.margin-class(href="/")
+                        img(src="images/logo.png" alt="logo")
+        .flexer
+            #footer_center
+                div
+                    | &copy;2016-2021 &ldquo;DOTA2MONEY&rdquo; ALL RIGHTS RESERVED
+        .flexer
+            #footer_right
+                ul.partners
+                    li
+                        button(onclick="$('#bots_list').toggle()") 1
+
+                    li
+                        button(onclick="$('#select_char').toggle()") 2
+                    li
+                        button(onclick="$('#waiting_for_a_bot').toggle()") 3
+                    li.partner
+                        .flexer
+                            a(href="/faq")
+                                img(src="images/termsConditions.png", alt="termsConditions")
+

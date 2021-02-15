@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOTA MONEY 2</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesheets/nouislider.min.css">
+    <link rel="stylesheet" href="./stylesheets/faq.css">
+    <link rel="stylesheet" href="./stylesheets/faq-media.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.5/socket.io.min.js" integrity="sha512-L9L4VhE0D58fCxtJiYDHbIzSVfNGY24rhQPWTZPschTVKLpucPsLeT0FSjfnylLYARalTQqgwXsjjhi+wUTwIw==" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav id="nav">
+        <div class="container">
+          <div id="nav_left">
+            <div id="menuToggle"><span class="first_span"></span><span class="second_span"></span><span class="third-span"></span></div>
+            <div class="telephone-menu">
+              <ul>
+                <li><a id="home-list" href="/">Home</a></li>
+                <li><a href="/">Bots</a></li>
+                <li><a href="/faq">Faq</a></li>
+              </ul>
+            </div>
+            <div class="close-image"><img class="hidden-close" src="images/close.png" alt="close image"></div>
+            <div class="flexer">
+              <div id="logo"><a href="/"><img src="images/logo.png" alt="logo"></a></div>
+            </div>
+          </div>
+          <div id="nav_right">
+            <div class="flexer">
+              <ul id="menu">
+                <li class="menu-item"><a href="/">home</a></li>
+                <li class="menu-item"><a href="/">bots</a></li>
+                <li class="menu-item"><a href="/faq">faq</a></li>
+              </ul>
+              <div id="profile">
+                <button class="btn-orange" id="log_btn" onclick="window.location.href = 'https://dota2money.ru/?login';">log in via steam</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="mainContainer">
+        <div class="firstColumn">
+          <div class="about">
+            <div class="aboutHead">
+              <p>About</p>
+            </div>
+            <div class="aboutCont"><img src="images/ico.png" alt="Icon">
+              <p>DOTA2MONEY is an online dota 2 trading bot, that lets you exchange your unwanted dota items.</p>
+            </div>
+          </div>
+          <div class="askedQuestions">
+            <div class="top">
+              <div class="frequently_asked_questions">Frequently Asked Questions</div>
+            </div>
+            <div class="qa">
+              <div class="testbox">
+                <div class="question-box">
+                  <div class="box-q"><span>Q</span></div>
+                  <div class="box-question">
+                    <p>Why don&apos;t I see some of my items?</p><i class="material-icons add">add</i>
+                  </div>
+                </div>
+                <div class="answer-box">
+                  <div class="box-a"><span>A</span></div>
+                  <div class="box-answer">
+                    <p>Push the refresh button at your inventory. If the problem is not solved, try again in 1 minute. Most likely you have made a purchase on the market less then 7 days ago. Items appear only after 7 days after purchase.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="testbox">
+                <div class="question-box">
+                  <div class="box-q"><span>Q</span></div>
+                  <div class="box-question">
+                    <p>Why don&apos;t I see some of my items?</p><i class="material-icons add">add</i>
+                  </div>
+                </div>
+                <div class="answer-box">
+                  <div class="box-a"><span>A</span></div>
+                  <div class="box-answer">
+                    <p>Push the refresh button at your inventory. If the problem is not solved, try again in 1 minute. Most likely you have made a purchase on the market less then 7 days ago. Items appear only after 7 days after purchase.</p>
+                  </div>
+                </div>
+                <!---->
+                <div class="only-q">
+                  <div class="question-box">
+                    <div class="box-q"><span>Q</span></div>
+                    <div class="box-question">
+                      <p>Why don&apos;t I see some of my items?</p><i class="material-icons add">add</i>
+                    </div>
+                  </div>
+                </div>
+                <!---->
+                <div class="only-q">
+                  <div class="question-box">
+                    <div class="box-q"><span>Q</span></div>
+                    <div class="box-question">
+                      <p>Why don&apos;t I see some of my items?</p><i class="material-icons add">add</i>
+                    </div>
+                  </div>
+                </div>
+                <!---->
+                <div class="only-q">
+                  <div class="question-box">
+                    <div class="box-q"><span>Q</span></div>
+                    <div class="box-question">
+                      <p>Why don&apos;t I see some of my items?</p><i class="material-icons add">add</i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contactSupport">
+            <div class="aboutHead">
+              <p>Contact Support</p>
+            </div>
+            <div class="contactCont"><img id="avatar" src="./images/avatar.png">
+              <div class="info">
+                <div class="info-text">
+                  <p><img class="info-text-margin" src="images/rightshape.png">Problems with trading</p>
+                  <p><img class="info-text-margin" src="images/rightshape.png">Bug on the website</p>
+                  <p><img class="info-text-margin" src="images/rightshape.png">Cooperation</p>
+                  <p><img class="info-text-margin" src="images/shape.png">Other</p>
+                </div>
+                <div class="textArea">
+                  <p>Please provide details about the issue you are having:</p>
+                  <div class="bDiv"></div>
+                </div>
+                <div class="buttons"><img class="btnMrg" src="./images/ICO2.png">
+                  <button class="btn-purple btnMrg">ATTACH</button>
+                  <button class="btn-orange btnMrg">SEND</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="secondColumn">
+          <div class="container_trade_main">
+            <div class="top_how_to_trade">
+              <h3>How to trade</h3>
+            </div>
+            <div class="steps">
+              <div class="step_1">
+                <div class="title">
+                  <div class="step_number">1</div>
+                  <div class="action">Login to the site through Steam</div>
+                </div>
+                <div class="body">
+                  <div class="login_1"><a href="#"><img src="images/knopka-log-in.png" alt="Button image"></a></div>
+                </div>
+              </div>
+              <!-- end of step 1-->
+              <div class="step_2">
+                <!-- STEP-2---------STARTS HERE----------->
+                <div class="title" id="step2">
+                  <div class="flex-for-fq"></div>
+                  <div class="step_number">2</div>
+                  <div class="action">Setup your trade URL by clicking on your name in the right corner and clicking on</div>
+                </div>
+                <div class="test">&quot;Trade-Offer URL&quot;</div>
+              </div>
+              <div class="body" id="drop_image">
+                <div class="drop_list_image"><img src="images/droplist.png" alt="Droplist Image"></div>
+              </div>
+            </div>
+            <div class="step_3">
+              <!-- STEP-3--------STARTS-H-E-R-E------>
+              <div class="title">
+                <div class="step_number">3</div>
+                <div class="action">Insert your link Trade and click &quot;Update&quot;</div>
+              </div>
+              <div class="body">
+                <!-- -CONTENT------>
+                <div class="body_step_3">
+                  <div class="trade_offer_link">TRADE-OFFER LINK</div>
+                  <div class="update_click">
+                    <div class="update_image">
+                      <!-- -image--->
+                      <div class="button"><span>UPDATE</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="step_4">
+              <!-- -SAY HELLO TO STEP 4---------------->
+              <div class="title" id="step4">
+                <div class="step_number">4</div>
+                <div class="flx-fq">
+                  <div class="action">Choose the items you would like to trade from your inventory, this will result in</div>
+                  <div class="test">some items in bot&apos;s inventory being clickable.</div>
+                </div>
+              </div>
+              <div class="body">
+                <div class="header_block">
+                  <div class="header_block_image"><img src="images/icoOffer.png" alt="Icon Offer"></div>
+                  <div class="header_block_text_1">Offer</div>
+                  <div class="header_block_text_2">$ 1120.12</div>
+                </div>
+                <div class="item_images">
+                  <div class="item_image"><img src="images/droppedItem.png" alt="Dropped Item"></div>
+                  <div class="item_image"><img src="images/droppedItem.png" alt="Dropped Item"></div>
+                </div>
+              </div>
+            </div>
+            <!-- -end of step 4---->
+            <div class="step_5">
+              <!-- ----Step 5 ladies and gentleman---->
+              <div class="title" id="step5">
+                <div class="step_number">5</div>
+                <div class="action">Click on the big &quot;TRADE&quot; button between your and the bot&apos;s inventory</div>
+              </div>
+              <div class="body">
+                <div class="image_in_step_5"><img src="images/buttonTrade.png" alt="Trade Button"></div>
+              </div>
+            </div>
+            <!-- -end of step 5--->
+            <div class="step_6">
+              <!-- -STEP-6------------>
+              <div class="title" id="step6">
+                <div class="step_number">6</div>
+                <div class="action">Wait till all the steps are done and get the trade offer on your steam account.</div>
+              </div>
+              <div class="body" id="center-item">
+                <div class="image_step_6"><img src="images/wfb.png" alt="WFB Image"></div>
+              </div>
+            </div>
+            <!-- -END OF STEP-6--------->
+            <div class="step_7">
+              <!-- -----Step 7 ---starts here-->
+              <div class="title">
+                <div class="step_number">7</div>
+                <div class="action">Accept trade from bot. Done!</div>
+              </div>
+            </div>
+            <!-- ---end of step 7-------->
+          </div>
+          <!-- end of steps-->
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="flexer">
+          <div id="footer_left">
+            <div class="logo"><a class="margin-class" href="/"><img src="images/logo.png" alt="logo"></a></div>
+          </div>
+        </div>
+        <div class="flexer">
+          <div id="footer_center">
+            <div>&copy;2016-2021 &ldquo;DOTA2MONEY&rdquo; ALL RIGHTS RESERVED</div>
+          </div>
+        </div>
+        <div class="flexer">
+          <div id="footer_right">
+            <ul class="partners">
+              <li>
+                <button onclick="$('#bots_list').toggle()">1</button>
+              </li>
+              <li>
+                <button onclick="$('#select_char').toggle()">2</button>
+              </li>
+              <li>
+                <button onclick="$('#waiting_for_a_bot').toggle()">3</button>
+              </li>
+              <li class="partner">
+                <div class="flexer"><a href="/faq"><img src="images/termsConditions.png" alt="termsConditions"></a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal yii" id="waiting_for_a_bot" style="display: none;">
+      <div class="modal_window">
+        <div class="close modaler">
+          <button class="btn"><span class="fa fa-close"></span></button>
+        </div>
+        <div class="modalTitle">
+          <div class="title">waiting for a bot</div>
+          <div class="description">your trade request is being proccessed</div>
+        </div>
+        <div class="modalContent">
+          <ul class="list">
+            <li class="listItem">
+              <div class="icon"><span class="fa fa-check-circle-o"></span></div>
+              <div class="text">get offer</div>
+            </li>
+            <li class="listItem">
+              <div class="icon"><span class="fa fa-check-circle-o"></span></div>
+              <div class="text">validate offer</div>
+            </li>
+            <li class="listItem">
+              <div class="icon"><span class="fa fa-check-circle-o"></span></div>
+              <div class="text">send offer</div>
+            </li>
+            <li class="listItem">
+              <div class="icon"><span class="fa fa-check-circle-o"></span></div>
+              <div class="text">mobile confirmation</div>
+            </li>
+          </ul>
+          <div class="message">your trade offer is ready</div>
+          <div class="footer">
+            <div class="flexer">
+              <button class="btn-purple">confirm in browser</button>
+              <button class="btn-orange">confirm in steam</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal yii" id="bots_list" style="display:none;">
+      <div class="modal_window">
+        <div class="close modaler">
+          <button class="btn"><span class="fa fa-close"></span></button>
+        </div>
+        <div class="modalTitle">
+          <div class="title">bots list</div>
+          <div class="description">send us your own offer. we will check it automatically</div>
+        </div>
+        <div class="modalContent">
+          <table>
+            <thead>
+              <tr>
+                <th>number</th>
+                <th>bot name</th>
+                <th>profile</th>
+                <th>trade link</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#1</td>
+                <td>bot #1</td>
+                <td>
+                  <button class="btn-purple">view bot profile</button>
+                </td>
+                <td>
+                  <button class="btn-orange">get a trade link</button>
+                </td>
+              </tr>
+              <tr>
+                <td>#2</td>
+                <td>bot #2</td>
+                <td>
+                  <button class="btn-purple">view bot profile</button>
+                </td>
+                <td>
+                  <button class="btn-orange">get a trade link</button>
+                </td>
+              </tr>
+              <tr>
+                <td>#3</td>
+                <td>bot #3</td>
+                <td>
+                  <button class="btn-purple">view bot profile</button>
+                </td>
+                <td>
+                  <button class="btn-orange">get a trade link</button>
+                </td>
+              </tr>
+              <tr>
+                <td>#4</td>
+                <td>bot #4</td>
+                <td>
+                  <button class="btn-purple">view bot profile</button>
+                </td>
+                <td>
+                  <button class="btn-orange">get a trade link</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/wNumb.js"></script>
+    <script src="scripts/nouislider.min.js"></script>
+    <script src="materialize/js/materialize.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/dnd.js"></script>
+    <script>const socket = io('https://dota2money.ru:2053');socket.on('online', function (data) {$('#online').text(data + 70);});</script>
+  </body>
+</html>

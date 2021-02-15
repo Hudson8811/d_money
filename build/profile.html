@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOTA MONEY 2</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesheets/nouislider.min.css">
+    <link rel="stylesheet" href="./stylesheets/faq.css">
+    <link rel="stylesheet" href="./stylesheets/faq-media.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.5/socket.io.min.js" integrity="sha512-L9L4VhE0D58fCxtJiYDHbIzSVfNGY24rhQPWTZPschTVKLpucPsLeT0FSjfnylLYARalTQqgwXsjjhi+wUTwIw==" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav id="nav">
+        <div class="container">
+          <div id="nav_left">
+            <div id="menuToggle"><span class="first_span"></span><span class="second_span"></span><span class="third-span"></span></div>
+            <div class="telephone-menu">
+              <ul>
+                <li><a id="home-list" href="/">Home</a></li>
+                <li><a href="/">Bots</a></li>
+                <li><a href="/faq">Faq</a></li>
+              </ul>
+            </div>
+            <div class="close-image"><img class="hidden-close" src="images/close.png" alt="close image"></div>
+            <div class="flexer">
+              <div id="logo"><a href="/"><img src="images/logo.png" alt="logo"></a></div>
+            </div>
+          </div>
+          <div id="nav_right">
+            <div class="flexer">
+              <ul id="menu">
+                <li class="menu-item"><a href="/">home</a></li>
+                <li class="menu-item"><a href="/">bots</a></li>
+                <li class="menu-item"><a href="/faq">faq</a></li>
+              </ul>
+              <div id="profile">
+                <button class="btn-orange" id="log_btn" onclick="window.location.href = 'https://dota2money.ru/?login';">log in via steam</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <p>PROFILE</p>
+    <footer>
+      <div class="container">
+        <div class="flexer">
+          <div id="footer_left">
+            <div class="logo"><a class="margin-class" href="/"><img src="images/logo.png" alt="logo"></a></div>
+          </div>
+        </div>
+        <div class="flexer">
+          <div id="footer_center">
+            <div>&copy;2016-2021 &ldquo;DOTA2MONEY&rdquo; ALL RIGHTS RESERVED</div>
+          </div>
+        </div>
+        <div class="flexer">
+          <div id="footer_right">
+            <ul class="partners">
+              <li>
+                <button onclick="$('#bots_list').toggle()">1</button>
+              </li>
+              <li>
+                <button onclick="$('#select_char').toggle()">2</button>
+              </li>
+              <li>
+                <button onclick="$('#waiting_for_a_bot').toggle()">3</button>
+              </li>
+              <li class="partner">
+                <div class="flexer"><a href="/faq"><img src="images/termsConditions.png" alt="termsConditions"></a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal yii" id="waiting_for_a_bot" style="display: none;">
+      <div class="modal_window">
+        <div class="close modaler">
+          <button class="btn"><span class="fa fa-close"></span></button>
+        </div>
+        <div class="modalTitle">
+          <div class="title">waiting for a bot</div>
+          <div class="description">your trade request is being proccessed</div>
+        </div>
+        <div class="modalContent">
+          <ul class="list">
+            <li class="listItem">
+              <div class="icon"><span class="fa fa-check-circle-o"></span></div>
+              <div class="text">get offer</div>
+            </li>
+            <li class="listItem">
+              <div class="icon"><span class="fa fa-check-circle-o"></span></div>
+              <div class="text">validate offer</div>
+            </li>
+            <li class="listItem">
+              <div class="icon"><span class="fa fa-check-circle-o"></span></div>
+              <div class="text">send offer</div>
+            </li>
+            <li class="listItem">
+              <div class="icon"><span class="fa fa-check-circle-o"></span></div>
+              <div class="text">mobile confirmation</div>
+            </li>
+          </ul>
+          <div class="message">your trade offer is ready</div>
+          <div class="footer">
+            <div class="flexer">
+              <button class="btn-purple">confirm in browser</button>
+              <button class="btn-orange">confirm in steam</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal yii" id="bots_list" style="display:none;">
+      <div class="modal_window">
+        <div class="close modaler">
+          <button class="btn"><span class="fa fa-close"></span></button>
+        </div>
+        <div class="modalTitle">
+          <div class="title">bots list</div>
+          <div class="description">send us your own offer. we will check it automatically</div>
+        </div>
+        <div class="modalContent">
+          <table>
+            <thead>
+              <tr>
+                <th>number</th>
+                <th>bot name</th>
+                <th>profile</th>
+                <th>trade link</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#1</td>
+                <td>bot #1</td>
+                <td>
+                  <button class="btn-purple">view bot profile</button>
+                </td>
+                <td>
+                  <button class="btn-orange">get a trade link</button>
+                </td>
+              </tr>
+              <tr>
+                <td>#2</td>
+                <td>bot #2</td>
+                <td>
+                  <button class="btn-purple">view bot profile</button>
+                </td>
+                <td>
+                  <button class="btn-orange">get a trade link</button>
+                </td>
+              </tr>
+              <tr>
+                <td>#3</td>
+                <td>bot #3</td>
+                <td>
+                  <button class="btn-purple">view bot profile</button>
+                </td>
+                <td>
+                  <button class="btn-orange">get a trade link</button>
+                </td>
+              </tr>
+              <tr>
+                <td>#4</td>
+                <td>bot #4</td>
+                <td>
+                  <button class="btn-purple">view bot profile</button>
+                </td>
+                <td>
+                  <button class="btn-orange">get a trade link</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/wNumb.js"></script>
+    <script src="scripts/nouislider.min.js"></script>
+    <script src="materialize/js/materialize.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/dnd.js"></script>
+    <script>const socket = io('https://dota2money.ru:2053');socket.on('online', function (data) {$('#online').text(data + 70);});</script>
+  </body>
+</html>

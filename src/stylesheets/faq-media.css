@@ -1,0 +1,881 @@
+@media screen and (max-width: 948px) and (min-width: 662px) {
+    header #nav{
+        padding: 0 1%;
+    }
+    #socials{
+        display: none;
+    }
+    .secondColumn{
+        width: 100%;
+    }
+    #csmoney{
+      display: none !important;
+    }
+    body{
+        width: 100%;
+    }
+    #step2{
+        flex-wrap: nowrap;
+    }
+    #step4{
+        flex-wrap: nowrap;
+    }
+    .mainContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 3em;
+        width: 100%;
+        margin: 0 auto;
+    }
+ 
+    .firstColumn {
+        display: flex;
+        flex-direction: column;
+        /* margin-right: 3em; */
+        align-items: center;
+        margin-right: 0;
+        width: 95%;
+    }
+    .aboutHead p {
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+    .aboutCont img{
+     margin-left: 15px;
+    }
+    .aboutCont p{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .askedQuestions {
+        width: 95%;
+        margin-bottom: 1em;
+    }
+    .testbox{
+        width: 95%;
+    }
+    .about{
+        width: 95%;
+        margin-bottom: 1em;
+    }
+    .contactSupport {
+        margin-bottom: 1em;
+        width: 95%;
+    }
+    .container_trade_main{
+    width: 90%;
+    margin: 20px auto;
+    }
+    .bDiv {
+      width: 100%;
+    }
+
+    .info
+    {
+        width: 80%;
+    }
+    .top_how_to_trade {
+        padding-left: 20px;
+    }
+
+    .step_number {
+        margin-left: 20px;
+    }
+
+    .login_1{
+        padding: 10px 70px;
+    }
+    .body_step_3{
+        padding-left: 70px;
+    }
+    .update_image{
+        width: 300px;
+    }
+    .test {
+        padding-left: 70px;
+    }
+    .header_block{
+        margin: 20px auto;
+    }
+    .item_images{
+        padding-left: 40px;
+    }
+    
+    .image_in_step_5 {
+        padding-left:70px ;
+    }
+    .image_step_6{
+        padding-left: 0px;
+    }
+    
+    #setup{
+        padding-left: 70px;
+        margin-top: -30px;
+    
+    }
+    body .container{
+        width: 100%;
+    }
+    footer > .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flexer{
+        margin-top: 10px;
+    }
+
+    .header_block{
+     width: 100%;
+    }
+    .header_block_text_2{
+        padding-left: 0;
+    }
+    
+    #step6{
+        flex-wrap: nowrap;
+    }
+    #step5{
+        flex-wrap: nowrap;
+    }
+  
+    #center-item{
+        display: flex;
+        justify-content: center;
+    }
+    #step4{
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (min-width: 1602px) {
+    body .container {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    body .container{
+        width: 100%;
+    }
+    body{
+         width: 100%;
+         margin: 0 auto !important;
+    }
+    
+    .mainContainer {
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+        margin-top: 3em;
+        padding:0 3%;
+    }
+    .firstColumn {
+
+        display: flex;
+        flex-direction: column;
+        margin-right: 3em;
+    
+    }
+    header #nav{
+        padding: 0 5%;
+    }
+    .aboutCont{
+        padding: 10px !important;
+    }
+    .aboutCont img{
+        margin-left: 10px;
+        margin-right: 15px;
+    }
+    .testbox{
+      width: 100%;
+    }
+    .info{
+      width: 80%;
+    }
+    .bDiv {
+        width: 100%;
+        height: 200px;
+        background-color: rgb(227,222,232);
+    }
+    #footer-id{
+     width: 90% ;
+    }
+    .box-answer > p {
+        font-family: 'Open sans', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: #868297;
+        padding: 18px;
+    }
+    .textarea p{
+        margin-bottom: 5px;
+    }
+    .container_trade_main{
+        width: 100%;
+        height: auto;
+        padding-bottom: 115px;
+    }
+    .info-text{
+     margin-left: -100px;
+    }
+    .header_block_text_2 {
+        padding-left: 0px !important;
+    }
+    .steps{
+        padding: 0 25px;
+    }
+    
+    .title {
+        /* border: 1px solid aqua; */
+        display: flex;
+        /* justify-content: flex-start; */
+        align-items: center;
+        flex-wrap: nowrap !important;
+        /* flex-wrap: wrap; */
+    }
+    .step_4 .title .test{
+        margin: 10px -100px;
+    }
+    .body_step_3 {
+        display: grid;
+        /* margin-top: 15px; */
+        /* padding-left: 103px; */
+        /* display: flex; */
+        /* align-items: center; */
+        padding-left: 70px;
+    }
+    .trade_offer_link{
+        margin: 20px 50px;
+    }
+    .update_image{
+        width: 500px;
+    }
+    .flx-fq{
+        display: flex;
+        flex-direction: column;
+    }
+  
+    .flex-for-fq{
+        display:flex;
+        justify-content: space-between;
+    }
+    .header_block{
+        width: 510px;
+    }
+    .step_2 .test{
+        margin: 10px -10px;
+    }
+    .step_4 .title .flx-fq .action{
+        width:530px;
+    } 
+    .step_6 .title .action{
+        width:530px;
+    }
+    .image_step_6{
+        width:500px;
+    }
+    
+}
+
+
+@media screen and (max-width: 1600px) and (min-width: 1200px) {
+        .info-text{
+            margin-left: -50px;
+        }
+    body .container {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    body .container{
+        width: 100%;
+    }
+    body{
+    
+         margin: 0 auto !important;
+    }
+    
+    .mainContainer {
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+        margin-top: 3em;
+        padding:0 3%;
+    }
+    .firstColumn {
+
+        display: flex;
+        flex-direction: column;
+        margin-right: 3em;
+        max-width: 100%;
+    }
+    .aboutCont{
+        padding: 10px !important;
+    }
+    .aboutCont img{
+        margin-left: 10px;
+        margin-right: 15px;
+    }
+    .testbox{
+       
+            width: 95%;
+       
+    }
+    
+    .bDiv {
+        width: 350px;
+        height: 200px;
+        background-color: rgb(227,222,232);
+    }
+    
+    .box-answer > p {
+        font-family: 'Open sans', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: #868297;
+        padding: 18px;
+    }
+    #footer-id{
+        width: 90%;
+    }
+    .textarea p{
+        margin-bottom: 5px;
+    }
+    .container_trade_main{
+        width: 680px !important;
+        height: auto;
+        padding-bottom: 115px;
+    }
+    .header_block_text_2 {
+        padding-left: 0px !important;
+    }
+    .steps{
+        padding: 0 25px;
+    }
+    header #nav{
+        padding: 0 5%;
+    }
+    
+    .title {
+        /* border: 1px solid aqua; */
+        display: flex;
+        /* justify-content: flex-start; */
+        align-items: center;
+        flex-wrap: nowrap !important;
+        /* flex-wrap: wrap; */
+    }
+    .step_4 .title .test{
+        margin: 10px -100px;
+    }
+    .body_step_3 {
+        display: grid;
+        /* margin-top: 15px; */
+        /* padding-left: 103px; */
+        /* display: flex; */
+        /* align-items: center; */
+        padding-left: 70px;
+    }
+    .trade_offer_link{
+        margin: 20px 50px;
+    }
+    .update_image{
+        width: 500px;
+    }
+    .flx-fq{
+        display: flex;
+        flex-direction: column;
+    }
+  
+    .flex-for-fq{
+        display:flex;
+        justify-content: space-between;
+    }
+    .header_block{
+        width: 510px;
+    }
+    .step_2 .test{
+        margin: 10px -10px;
+    }
+    .step_4 .title .flx-fq .action{
+        width:530px;
+    } 
+    .step_6 .title .action{
+        width:530px;
+    }
+    .image_step_6{
+        width:500px;
+    }
+    
+}
+
+@media screen and (max-width: 1199px) and (min-width: 950px) {
+    #csmoney{
+        display: none !important;
+    }
+ 
+  body .container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+body .container{
+    width: 100%;
+}
+body{
+     margin: 0 auto !important;
+}
+
+.mainContainer {
+
+    display: grid;
+}
+.firstColumn {
+
+    display: flex;
+    flex-direction: column;
+    margin-right: 0em;
+    max-width: 100%;
+}
+.aboutCont{
+    padding: 10px !important;
+}
+.aboutCont img{
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.info{
+    
+        width: 80%;
+    
+}
+.bDiv {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(227,222,232);
+}
+.buttons
+{
+    justify-content: flex-start;
+}
+
+.box-answer > p {
+    font-family: 'Open sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #868297;
+    padding: 18px;
+}
+#footer-id{
+    width: 90%;
+}
+.textarea p{
+    margin-bottom: 5px;
+}
+.container_trade_main{
+
+    height: auto;
+    padding-bottom: 115px;
+}
+.header_block_text_2 {
+    padding-left: 0px !important;
+}
+.steps{
+    padding: 0 25px;
+}
+header #nav{
+    padding: 0 1%;
+}
+
+
+.title {
+    /* border: 1px solid aqua; */
+    display: flex;
+    /* justify-content: flex-start; */
+    align-items: center;
+    flex-wrap: nowrap !important;
+    /* flex-wrap: wrap; */
+}
+.step_4 .title .test{
+    margin: 10px -100px;
+}
+.body_step_3 {
+    display: grid;
+    /* margin-top: 15px; */
+    /* padding-left: 103px; */
+    /* display: flex; */
+    /* align-items: center; */
+    padding-left: 70px;
+}
+.trade_offer_link{
+    margin: 20px 50px;
+}
+.update_image{
+    width: 500px;
+}
+.flx-fq{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-for-fq{
+    display:flex;
+    justify-content: space-between;
+}
+.header_block{
+    width: 510px;
+}
+.step_2 .test{
+    margin: 10px -10px;
+}
+.step_4 .title .flx-fq .action{
+    width:530px;
+} 
+.step_6 .title .action{
+    width:530px;
+}
+.image_step_6{
+    width:500px;
+}
+
+}
+
+
+@media screen and (max-width: 660px) and (min-width: 320px) {
+    
+    #menuToggle
+    {
+      display: block ;
+      position: absolute;
+      top: 48px;
+      right: 5px;
+      cursor: pointer;
+      z-index: 1;
+
+      -webkit-user-select: none;
+      user-select: none;
+    }
+    #logo a{
+   width: 118px;
+    }
+
+    #menuToggle span
+    {
+
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
+
+      background: #cdcdcd;
+      border-radius: 3px;
+
+      z-index: 1;
+
+      transform-origin: 4px 0px;
+
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  opacity 0.55s ease;
+    }
+
+    .telephone-menu {
+        background: black;
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+        margin-top: -20px;
+        max-height: 0;
+        transition: max-height 1s ease-out;
+        overflow: hidden;
+        display: block !important;
+        font-family: 'Roboto',sans-serif;
+    }
+    .telephone-menu a {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px solid #cecece;
+        border-top: 1px solid #cecece;
+    }
+    
+.telephone-menu ul {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    font-size: 30px;
+    letter-spacing: 0.1em;
+}
+.telephone-menu ul li {
+    padding: 25px 9px;
+    width: 100%;
+    height: 80px;
+    color: #e58636;
+    cursor: pointer;
+    font-size: 26px;
+
+}
+
+    header #nav{
+        padding: 0 1%;
+    }
+    #socials{
+        display: none;
+    }
+    .secondColumn{
+        width: 100%;
+    }
+    #csmoney{
+      display: none !important;
+    }
+    body{
+        width: 100%;
+    }
+    #step2{
+        flex-wrap: nowrap;
+    }
+    #step4{
+        flex-wrap: nowrap;
+    }
+    #nav{
+        display: block;
+    }
+    .mainContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 3em;
+        width: 100%;
+        margin: 0 auto;
+    }
+ 
+    .firstColumn {
+        display: flex;
+        flex-direction: column;
+        /* margin-right: 3em; */
+        align-items: center;
+        margin-right: 0;
+        width: 95%;
+    }
+    #menu{
+display: none !important;
+    }
+    header #nav #nav_left > .flexer > div {
+        margin: 0px;
+    }
+    .aboutHead p {
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+    .aboutCont img{
+     margin-left: 15px;
+    }
+    .aboutCont p{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .askedQuestions {
+        width: 95%;
+        margin-bottom: 1em;
+    }
+    .testbox{
+        width: 95%;
+    }
+    .about{
+        width: 95%;
+        margin-bottom: 1em;
+    }
+    .contactSupport {
+        margin-bottom: 1em;
+        width: 95%;
+    }
+    .container_trade_main{
+    width: 90%;
+    margin: 20px auto;
+    height: auto;
+    }
+    .bDiv {
+      width:90%;
+    }
+    .drop_list_image {
+       padding-top: 10px;
+       padding-left: 0;
+       padding-bottom: 0;
+    }
+    .step_2 {
+        margin-top: 10px;
+    }
+    .step_3 {
+        margin-top: 10px;
+    }
+    .info
+    {
+        width: 80%;
+    }
+    .top_how_to_trade {
+        padding-left: 20px;
+    }
+
+    .step_number {
+        margin-left: 5px;
+    }
+    #drop_image{
+    
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            margin-left: 50px;
+       
+    }
+
+    .login_1{
+        padding: 10px 70px;
+    }
+    .body_step_3{
+        padding-left: 60px;
+    }
+    .update_image{
+        width: 300px;
+    }
+    .test {
+        padding-left: 60px;
+    }
+    .header_block{
+        margin: 20px auto;
+    }
+    .item_images{
+        padding-left: 15px;
+    }
+    .item_image img{
+ width: 100%;
+    }
+    .image_in_step_5 {
+        padding-left:50px ;
+    }
+    .image_step_6 img{
+        width: 100%;
+    }
+    .image_step_6{
+        padding-left: 0px;
+    }
+    
+    #setup{
+        padding-left: 70px;
+        margin-top: -30px;
+    
+    }
+    body .container{
+        width: 100%;
+    }
+    footer > .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flexer{
+        margin-top: 10px;
+    }
+
+    .header_block{
+     width: 100%;
+    }
+    .header_block_text_2{
+        padding-left: 0;
+    }
+    
+    #step6{
+        flex-wrap: nowrap;
+    }
+    #step5{
+        flex-wrap: nowrap;
+    }
+  
+    #center-item{
+        display: flex;
+        justify-content: center;
+    }
+    #step4{
+        flex-wrap: nowrap;
+    }
+    .frequently_asked_questions {
+        font-family: 'Open sans', sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        color: #fff;
+        /* padding: 52px; */
+        padding-left: 10px;
+    }
+    .box-question > p {
+        font-family: 'Open sans', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: #868297;
+        /* padding: 28px; */
+        padding-left: 5px;
+    }
+    nav{
+        display: none;
+    }
+    .box-answer > p {
+        font-family: 'Open sans', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: #868297;
+        padding: 5px 5px;
+        font-size: 15px;
+    }
+    .info-text{
+        margin-left: -50px;
+    }
+    #avatar{
+     height: 60px;
+    }
+
+    .top_how_to_trade h3{
+        font-weight: 400;
+    }
+    .step_1 .title{
+        flex-wrap: nowrap;
+    }
+    .step_3 .title{
+        flex-wrap: nowrap;
+    }
+    .step_7 .title{
+        flex-wrap: nowrap;
+    }
+    .body_step_3{
+        display: grid;
+        grid-gap:10px;
+    }
+    .update_click {
+        margin-left: -10px;
+    }
+    .update_image {
+        width: 90%;
+    }
+    .update_image .button{
+        width: 90px;
+    }
+    .flx-fq .test {
+        margin-left: -60px;
+    }
+    .step_7{
+        padding-bottom: 30px;
+    }
+    header #nav .container {
+        height: inherit;
+        display: flex;
+         flex-direction: row; 
+         justify-content: left; 
+    }
+
+}
