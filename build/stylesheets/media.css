@@ -166,12 +166,7 @@ footer > .container > .flexer {
         -webkit-overflow-scrolling: touch;
     }
 
-    #mainContent .addstyle {
-        background: rgba(255,255,255,0.3);
-        cursor: grabbing;
-        cursor: -webkit-grabbing;
-        transform: scale(1);
-    }
+
 
     header #nav #nav_left > .flexer > div {
         margin: 0 0px 0 5px;
@@ -237,9 +232,6 @@ footer > .container > .flexer {
         color: #b8b4c2;
         z-index: 80;
     }
-    header #welcome .container > .flexer .texts > p#second {
-        font-size: 45px;
-    }
 
     footer > .container {
         display: flex;
@@ -252,12 +244,7 @@ footer > .container > .flexer {
 
 
 
-    header #welcome .container > .flexer .texts {
-        margin-bottom: 20px;
-        padding: 5px;
-        text-transform: uppercase;
-        font-weight: 600;
-    }
+
 
     header #nav #nav_right > .flexer #menu {
         text-transform: uppercase;
@@ -289,13 +276,6 @@ footer > .container > .flexer {
     }
 
 
-
-
-
-
-    /*
-     * Just a quick hamburger
-     */
     #menuToggle span
     {
 
@@ -446,12 +426,7 @@ margin: 10px 20px;
         cursor: pointer;
     }
 
-    #mainContent .addstyle {
-        background: rgba(255,255,255,0.3);
-        cursor: grabbing;
-        cursor: -webkit-grabbing;
-        transform: scale(1);
-    }
+
 main #trading_steps .blockContent .blockContainer{
     width: 100%;
 }
@@ -557,9 +532,7 @@ margin: 0 10px;
       #main_center{
         min-height: 1470px !important;
       }
- header #welcome .container > .flexer .texts > p#second {
-    font-size: 54px;
-}
+
 main #toolBlock .blockContent .list {
     display: grid;
     /* flex-direction: row; */
@@ -639,12 +612,7 @@ main #mainContent > .container{
     cursor: pointer;
 }
 
-#mainContent .addstyle {
-    background: rgba(255,255,255,0.3);
-    cursor: grabbing;
-    cursor: -webkit-grabbing;
-    transform: scale(1);
-}
+
 #new_grid{
     display: grid !important;
     grid-template-columns: 1fr 1fr 1fr 1fr;

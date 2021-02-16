@@ -2,15 +2,11 @@
     header #nav{
         padding: 0 1%;
     }
-    #socials{
-        display: none;
-    }
+   
     .secondColumn{
         width: 100%;
     }
-    #csmoney{
-      display: none !important;
-    }
+
     body{
         width: 100%;
     }
@@ -109,12 +105,7 @@
     .image_step_6{
         padding-left: 0px;
     }
-    
-    #setup{
-        padding-left: 70px;
-        margin-top: -30px;
-    
-    }
+
     body .container{
         width: 100%;
     }
@@ -411,9 +402,7 @@
 }
 
 @media screen and (max-width: 1199px) and (min-width: 950px) {
-    #csmoney{
-        display: none !important;
-    }
+ 
  
   body .container {
     width: 100%;
@@ -558,7 +547,7 @@ header #nav{
       user-select: none;
     }
     #logo a{
-   width: 118px;
+    width: 118px;
     }
 
     #menuToggle span
@@ -631,9 +620,7 @@ header #nav{
     .secondColumn{
         width: 100%;
     }
-    #csmoney{
-      display: none !important;
-    }
+
     body{
         width: 100%;
     }
@@ -879,3 +866,6 @@ display: none !important;
     }
 
 }
+
+
+
