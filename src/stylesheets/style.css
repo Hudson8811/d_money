@@ -706,6 +706,10 @@ input:checked + .slider2:before {
 .dragzone img{
   cursor: pointer;
 }
+.drag-image img{
+  width: 150px;
+  height: 150px;
+}j
 .stylesOfImg{
   background: #838383;
   border-radius: 10px;
@@ -917,4 +921,184 @@ main #iDontKnow > .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.modal {
+  z-index: 500;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .modal .close {
+    z-index: 1000; }
+  .modal .modal_window {
+    padding: 20px;
+    border-radius: 4px;
+    background-color: #fff;
+    margin: auto;
+    overflow-y: scroll;
+    position: relative;
+    min-width: 800px;
+    min-height: 300px; }
+    .modal .modal_window::-webkit-scrollbar {
+      display: none; }
+    .modal .modal_window .modalTitle {
+      text-align: center;
+      padding: 20px 0;
+      text-transform: uppercase; }
+      .modal .modal_window .modalTitle .title {
+        font-weight: 600;
+        font-size: 32px;
+        padding: 10px 0;
+        font-family: 'Oswald',sans-serif;
+        letter-spacing: 1px;
+        color: #66636c; }
+      .modal .modal_window .modalTitle .description {
+        font-weight: 100;
+        color: #b8b4c2; }
+    .modal .modal_window .modalContent {
+      padding: 5px 0; }
+  .modal#bots_list .modalContent table {
+    width: 100%;
+    border-collapse: collapse;
+    border-color: transparent;
+    color: #66636c; }
+    .modal#bots_list .modalContent table thead tr {
+      border-bottom: 1px solid rgba(102, 99, 108, 0.2); }
+      .modal#bots_list .modalContent table thead tr th {
+        text-transform: uppercase;
+        text-align: left;
+        padding: 10px; }
+    .modal#bots_list .modalContent table tbody tr {
+      border: 0;
+      border-bottom: 1px solid rgba(102, 99, 108, 0.2); }
+      .modal#bots_list .modalContent table tbody tr td {
+        padding: 20px;
+        border: 0; }
+        .modal#bots_list .modalContent table tbody tr td:nth-child(3) {
+          text-align: right; }
+      .modal#bots_list .modalContent table tbody tr:last-child {
+        border: 0; }
+  .modal#waiting_for_a_bot .modalContent .list {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center; }
+    .modal#waiting_for_a_bot .modalContent .list .listItem {
+      flex: 1; }
+      .modal#waiting_for_a_bot .modalContent .list .listItem .icon {
+        color: #e58636;
+        font-size: 96px; }
+      .modal#waiting_for_a_bot .modalContent .list .listItem .text {
+        padding: 5px 0;
+        color: #66636c;
+        text-transform: capitalize; }
+  .modal#waiting_for_a_bot .modalContent .message {
+    text-align: center;
+    text-transform: uppercase;
+    color: #66636c;
+    padding: 20px 0; }
+  .modal#waiting_for_a_bot .modalContent .footer {
+    width: 70%;
+    margin: 0 auto; }
+    .modal#waiting_for_a_bot .modalContent .footer .flexer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+  .modal#select_char .modal_window {
+    width: 900px; }
+  .modal#select_char .modalTitle {
+    position: relative; }
+    .modal#select_char .modalTitle #select_char_reset {
+      position: absolute;
+      left: 20px;
+      top: 25px;
+      transform: scale(0.9); }
+  .modal#select_char .modalContent table {
+    width: 100%;
+    border-collapse: collapse;
+    border-color: transparent;
+    color: #66636c; }
+    .modal#select_char .modalContent table thead tr {
+      border-bottom: 1px solid rgba(102, 99, 108, 0.2); }
+      .modal#select_char .modalContent table thead tr th {
+        text-transform: uppercase;
+        text-align: left;
+        padding: 10px; }
+    .modal#select_char .modalContent table tbody tr td {
+      cursor: pointer;
+      position: relative;
+      padding: 10px;
+      border: 0;
+      padding-right: 30px; }
+      .modal#select_char .modalContent table tbody tr td .active {
+        position: absolute;
+        z-index: 1;
+        right: 10px;
+        top: 10px;
+        bottom: 10px;
+        color: #66636c; }
+
+        header #welcome .container {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          position: initial;
+      }
+
+      header #welcome .container > .flexer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header #welcome .container > .flexer .texts {
+      margin-bottom: 20px;
+      padding: 10px 0;
+      text-transform: uppercase;
+      font-weight: 600;
+  }
+
+  header #welcome .container > .flexer .texts > p#first {
+    font-size: 22.4px;
+}
+
+.texts > p {
+  padding: 5px 0;
+}
+
+header #welcome .container > .flexer .texts > p#second {
+  font-size: 64px;
+}
+
+header #welcome .container > .flexer .texts > p#third {
+  font-size: 22.4px;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+header #welcome .container > .flexer #arrow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+header #welcome {
+  color: #fff;
+  text-align: center;
+  min-height: 533px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
 }
