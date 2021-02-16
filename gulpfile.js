@@ -13,7 +13,9 @@ var gulp = require('gulp'),
 	rimraf = require('rimraf'),
 	reload = browserSync.reload,
 	svgSprite = require('gulp-svg-sprite'),
-	pug = require('gulp-pug');
+	pug = require('gulp-pug'),
+	data = require('gulp-data'),
+	fs = require('fs');
 
 
 
@@ -65,6 +67,9 @@ gulp.task('html:build', function () {
 */
 gulp.task('html:build', function buildHTML() {
 	return gulp.src('src/views/*.pug')
+		.pipe(data(function(file) {
+			return JSON.parse(fs.readFileSync('src/data.json'))
+		}))
 		.pipe(pug({
 		// Your options in here.
 		pretty: true
