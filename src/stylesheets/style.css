@@ -201,6 +201,10 @@ main #trading_steps {
   background-color: #eae4f0; }
 main #iDontKnow {
   background-color: #dad5dc; }
+#filterBlock{
+  position: absolute;
+  top: -100px;
+}
 main #mainContent > .container {
   display: flex;
   flex-direction: row;
