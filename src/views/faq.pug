@@ -1,181 +1,182 @@
-extends layout
+extends layout-page
 
 block styles
     link(rel="stylesheet", href="./stylesheets/faq.css")
     link(rel="stylesheet", href="./stylesheets/faq-media.css")
 block content
     main
-        .mainContainer
-            .firstColumn
-                .about
-                    .aboutHead
-                        p About
-                    .aboutCont
-                        img(src="images/ico.png" alt="Icon")
-                        p
-                            | DOTA2MONEY is an online dota 2 trading bot, that lets you exchange your unwanted dota items.
-                .askedQuestions
-                    .top
-                        .frequently_asked_questions
-                            | Frequently Asked Questions
-                    .qa
-                        .testbox
-                            .question-box
-                                .box-q
-                                    span Q
-                                .box-question
-                                    p Why don&apos;t I see some of my items?
-                                    i.material-icons.add add
-                            .answer-box
-                                .box-a
-                                    span A
-                                .box-answer
+        .page-container
+            .mainContainer
+                .firstColumn
+                    .about
+                        .aboutHead
+                            p About
+                        .aboutCont
+                            img(src="images/ico.png" alt="Icon")
+                            p
+                                | DOTA2MONEY is an online dota 2 trading bot, that lets you exchange your unwanted dota items.
+                    .askedQuestions
+                        .top
+                            .frequently_asked_questions
+                                | Frequently Asked Questions
+                        .qa
+                            .testbox
+                                .question-box
+                                    .box-q
+                                        span Q
+                                    .box-question
+                                        p Why don&apos;t I see some of my items?
+                                        i.material-icons.add add
+                                .answer-box
+                                    .box-a
+                                        span A
+                                    .box-answer
+                                        p
+                                            | Push the refresh button at your inventory. If the problem is not solved, try again in 1 minute. Most likely you have made a purchase on the market less then 7 days ago. Items appear only after 7 days after purchase.
+                            .testbox
+                                .question-box
+                                    .box-q
+                                        span Q
+                                    .box-question
+                                        p Why don&apos;t I see some of my items?
+                                        i.material-icons.add add
+                                .answer-box
+                                    .box-a
+                                        span A
+                                    .box-answer
+                                        p
+                                            | Push the refresh button at your inventory. If the problem is not solved, try again in 1 minute. Most likely you have made a purchase on the market less then 7 days ago. Items appear only after 7 days after purchase.
+                                //
+                                .only-q
+                                    .question-box
+                                        .box-q
+                                            span Q
+                                        .box-question
+                                            p Why don&apos;t I see some of my items?
+                                            i.material-icons.add add
+                                //
+                                .only-q
+                                    .question-box
+                                        .box-q
+                                            span Q
+                                        .box-question
+                                            p Why don&apos;t I see some of my items?
+                                            i.material-icons.add add
+                                //
+                                .only-q
+                                    .question-box
+                                        .box-q
+                                            span Q
+                                        .box-question
+                                            p Why don&apos;t I see some of my items?
+                                            i.material-icons.add add
+                    .contactSupport
+                        .aboutHead
+                            p Contact Support
+                        .contactCont
+                            img#avatar(src="./images/avatar.png")
+                            .info
+                                .info-text
                                     p
-                                        | Push the refresh button at your inventory. If the problem is not solved, try again in 1 minute. Most likely you have made a purchase on the market less then 7 days ago. Items appear only after 7 days after purchase.
-                        .testbox
-                            .question-box
-                                .box-q
-                                    span Q
-                                .box-question
-                                    p Why don&apos;t I see some of my items?
-                                    i.material-icons.add add
-                            .answer-box
-                                .box-a
-                                    span A
-                                .box-answer
+                                        img.info-text-margin(src="images/rightshape.png")
+                                        | Problems with trading
                                     p
-                                        | Push the refresh button at your inventory. If the problem is not solved, try again in 1 minute. Most likely you have made a purchase on the market less then 7 days ago. Items appear only after 7 days after purchase.
-                            //
-                            .only-q
-                                .question-box
-                                    .box-q
-                                        span Q
-                                    .box-question
-                                        p Why don&apos;t I see some of my items?
-                                        i.material-icons.add add
-                            //
-                            .only-q
-                                .question-box
-                                    .box-q
-                                        span Q
-                                    .box-question
-                                        p Why don&apos;t I see some of my items?
-                                        i.material-icons.add add
-                            //
-                            .only-q
-                                .question-box
-                                    .box-q
-                                        span Q
-                                    .box-question
-                                        p Why don&apos;t I see some of my items?
-                                        i.material-icons.add add
-                .contactSupport
-                    .aboutHead
-                        p Contact Support
-                    .contactCont
-                        img#avatar(src="./images/avatar.png")
-                        .info
-                            .info-text
-                                p
-                                    img.info-text-margin(src="images/rightshape.png")
-                                    | Problems with trading
-                                p
-                                    img.info-text-margin(src="images/rightshape.png")
-                                    | Bug on the website
-                                p
-                                    img.info-text-margin(src="images/rightshape.png")
-                                    | Cooperation
-                                p
-                                    img.info-text-margin(src="images/shape.png")
-                                    | Other
-                            .textArea
-                                p Please provide details about the issue you are having:
-                                .bDiv
-                            .buttons
-                                img.btnMrg(src="./images/ICO2.png")
-                                button.btn-purple.btnMrg ATTACH
-                                button.btn-orange.btnMrg SEND
-            .secondColumn
-                .container_trade_main
-                    .top_how_to_trade
-                        h3 How to trade
-                    .steps
-                        .step_1
+                                        img.info-text-margin(src="images/rightshape.png")
+                                        | Bug on the website
+                                    p
+                                        img.info-text-margin(src="images/rightshape.png")
+                                        | Cooperation
+                                    p
+                                        img.info-text-margin(src="images/shape.png")
+                                        | Other
+                                .textArea
+                                    p Please provide details about the issue you are having:
+                                    .bDiv
+                                .buttons
+                                    img.btnMrg(src="./images/ICO2.png")
+                                    button.btn-purple.btnMrg ATTACH
+                                    button.btn-orange.btnMrg SEND
+                .secondColumn
+                    .container_trade_main
+                        .top_how_to_trade
+                            h3 How to trade
+                        .steps
+                            .step_1
+                                .title
+                                    .step_number 1
+                                    .action Login to the site through Steam
+                                .body
+                                    .login_1
+                                        a(href="#")
+                                            img(src="images/knopka-log-in.png" alt="Button image")
+                            // end of step 1
+                            .step_2
+                                // STEP-2---------STARTS HERE---------
+                                #step2.title
+                                    .flex-for-fq
+                                    .step_number 2
+                                    .action
+                                        | Setup your trade URL by clicking on your name in the right corner and clicking on
+                                .test &quot;Trade-Offer URL&quot;
+                            #drop_image.body
+                                .drop_list_image
+                                    img(src="images/droplist.png" alt="Droplist Image")
+                        .step_3
+                            // STEP-3--------STARTS-H-E-R-E----
                             .title
-                                .step_number 1
-                                .action Login to the site through Steam
+                                .step_number 3
+                                .action Insert your link Trade and click &quot;Update&quot;
                             .body
-                                .login_1
-                                    a(href="#")
-                                        img(src="images/knopka-log-in.png" alt="Button image")
-                        // end of step 1
-                        .step_2
-                            // STEP-2---------STARTS HERE---------
-                            #step2.title
-                                .flex-for-fq
-                                .step_number 2
-                                .action
-                                    | Setup your trade URL by clicking on your name in the right corner and clicking on
-                            .test &quot;Trade-Offer URL&quot;
-                        #drop_image.body
-                            .drop_list_image
-                                img(src="images/droplist.png" alt="Droplist Image")
-                    .step_3
-                        // STEP-3--------STARTS-H-E-R-E----
-                        .title
-                            .step_number 3
-                            .action Insert your link Trade and click &quot;Update&quot;
-                        .body
-                            // -CONTENT----
-                            .body_step_3
-                                .trade_offer_link TRADE-OFFER LINK
-                                .update_click
-                                    .update_image
-                                        // -image-
-                                        .button
-                                            span UPDATE
-                    .step_4
-                        // -SAY HELLO TO STEP 4--------------
-                        #step4.title
-                            .step_number 4
-                            .flx-fq
-                                .action
-                                    | Choose the items you would like to trade from your inventory, this will result in
-                                .test some items in bot&apos;s inventory being clickable.
-                        .body
-                            .header_block
-                                .header_block_image
-                                    img(src="images/icoOffer.png" alt="Icon Offer")
-                                .header_block_text_1 Offer
-                                .header_block_text_2 $ 1120.12
-                            .item_images
-                                .item_image
-                                    img(src="images/droppedItem.png" alt="Dropped Item")
-                                .item_image
-                                    img(src="images/droppedItem.png" alt="Dropped Item")
-                    // -end of step 4--
-                    .step_5
-                        // ----Step 5 ladies and gentleman--
-                        #step5.title
-                            .step_number 5
-                            .action Click on the big &quot;TRADE&quot; button between your and the bot&apos;s inventory
-                        .body
-                            .image_in_step_5
-                                img(src="images/buttonTrade.png" alt="Trade Button")
-                    // -end of step 5-
-                    .step_6
-                        // -STEP-6----------
-                        #step6.title
-                            .step_number 6
-                            .action Wait till all the steps are done and get the trade offer on your steam account.
-                        #center-item.body
-                            .image_step_6
-                                img(src="images/wfb.png" alt="WFB Image")
-                    // -END OF STEP-6-------
-                    .step_7
-                        // -----Step 7 ---starts here
-                        .title
-                            .step_number 7
-                            .action Accept trade from bot. Done!
-                    // ---end of step 7------
-                // end of steps
+                                // -CONTENT----
+                                .body_step_3
+                                    .trade_offer_link TRADE-OFFER LINK
+                                    .update_click
+                                        .update_image
+                                            // -image-
+                                            .button
+                                                span UPDATE
+                        .step_4
+                            // -SAY HELLO TO STEP 4--------------
+                            #step4.title
+                                .step_number 4
+                                .flx-fq
+                                    .action
+                                        | Choose the items you would like to trade from your inventory, this will result in
+                                    .test some items in bot&apos;s inventory being clickable.
+                            .body
+                                .header_block
+                                    .header_block_image
+                                        img(src="images/icoOffer.png" alt="Icon Offer")
+                                    .header_block_text_1 Offer
+                                    .header_block_text_2 $ 1120.12
+                                .item_images
+                                    .item_image
+                                        img(src="images/droppedItem.png" alt="Dropped Item")
+                                    .item_image
+                                        img(src="images/droppedItem.png" alt="Dropped Item")
+                        // -end of step 4--
+                        .step_5
+                            // ----Step 5 ladies and gentleman--
+                            #step5.title
+                                .step_number 5
+                                .action Click on the big &quot;TRADE&quot; button between your and the bot&apos;s inventory
+                            .body
+                                .image_in_step_5
+                                    img(src="images/buttonTrade.png" alt="Trade Button")
+                        // -end of step 5-
+                        .step_6
+                            // -STEP-6----------
+                            #step6.title
+                                .step_number 6
+                                .action Wait till all the steps are done and get the trade offer on your steam account.
+                            #center-item.body
+                                .image_step_6
+                                    img(src="images/wfb.png" alt="WFB Image")
+                        // -END OF STEP-6-------
+                        .step_7
+                            // -----Step 7 ---starts here
+                            .title
+                                .step_number 7
+                                .action Accept trade from bot. Done!
+                        // ---end of step 7------
+                    // end of steps

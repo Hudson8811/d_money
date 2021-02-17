@@ -27,9 +27,11 @@ width: 100%; }
     text-decoration: none;
     color: inherit; }
   body .container {
-    width: 1400px;
+    width: 100%;
     margin: 0 auto;
-    position: relative; }
+    position: relative;
+  box-sizing: border-box;
+      padding: 0 20px;}
   body .btn, body .btn-orange, body .btn-purple, body .btn-outline {
     border: 0;
     background: transparent;
@@ -90,19 +92,17 @@ header {
     position: fixed;
     z-index: 90;
     top: 0;
-    /* padding: 10px 0; */
-    padding: 0 10%;
     left: 0;
     right: 0;
-    /* padding: 0 calc((100% - 1400px) / 2); */
+    padding: 0 calc((100% - 1400px) / 2);
     color: #fff;
     height: 100px;
 }
     header #nav .container {
+        justify-content: space-between;
       height: inherit;
       display: flex;
-      flex-direction: row;
-      justify-content: space-between; }
+      flex-direction: row;}
     header #nav #nav_left {
       height: inherit; }
       header #nav #nav_left > .flexer {
@@ -122,12 +122,18 @@ header {
         header #nav #nav_right > .flexer #menu, header #nav #nav_right > .flexer #profile {
           margin: 0 10px; }
         header #nav #nav_right > .flexer #menu {
-          text-transform: uppercase; }
+          text-transform: uppercase; display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;}
         header #nav #nav_right > .flexer #profile button {
           font-family: 'Oswald',sans-serif;
           font-size: 14.5454545455px;
           letter-spacing: 1px; }
-  
+
+header #nav #nav_right > .flexer #menu > .menu-item {
+    margin: 0 5px;
+}
 
 footer {
   background-color: #3f3760;
@@ -168,6 +174,9 @@ footer {
             footer > .container #footer_right .partners .partner > .flexer a img {
               width: 100%; }
 
+.page-container{
+    padding: 0 calc((100% - 1400px) / 2);
+}
 
 .top {
 	height: 71px;
@@ -750,6 +759,17 @@ footer {
   top: 45px;
   display: none ;
   /* height: 20px; */
+}
+.activate-close-image {
+    cursor: pointer;
+    display: block !important;
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    display: none;
+}
+.hide-burger {
+    display: none !important;
 }
 
 .menu-class {

@@ -1,12 +1,13 @@
-extends layout
+extends layout-page
 
 block styles
-    link(rel="stylesheet", href="./stylesheets/style.css")
-    link(rel="stylesheet", href="./stylesheets/media.css")
+    link(rel="stylesheet", href="./stylesheets/profile.css")
+    link(rel="stylesheet", href="./stylesheets/profile-media.css")
+
 
 
 block content
-    .page_container
+    .mainContainer
         .container
             .profile
                 h1.profile_title Personal info
@@ -32,10 +33,7 @@ block content
                 .profile_block.profile_block--two
                     .profile_block_title Profile
                     .profile_block_block
-                        .profile_block_logo
-                            img(src="")
-                        .profile_block_name Profile NAME
-                        .clear
+
                         .block_table
                             .block_table_row
                                 .block_table_cell Commissions:
@@ -52,10 +50,7 @@ block content
                 .profile_block.profile_block--one
                     .profile_block_title Profile
                     .profile_block_block
-                        .profile_block_logo
-                            img(src="")
-                        .profile_block_name Profile NAME
-                        .clear
+
                         .block_table
                             .block_table_row
                                 .block_table_cell Email:

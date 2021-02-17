@@ -1,0 +1,260 @@
+@media screen and (max-width: 948px) and (min-width: 662px) {
+
+
+    body{
+        width: 100%;
+    }
+
+    body .container{
+        width: 100%;
+    }
+    footer > .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header_block{
+        width: 100%;
+    }
+    .header_block_text_2{
+        padding-left: 0;
+    }
+
+}
+
+@media screen and (min-width: 1602px) {
+    body .container {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    body .container{
+        width: 100%;
+    }
+    body{
+        width: 100%;
+        margin: 0 auto !important;
+    }
+
+
+
+    #footer-id{
+        width: 90% ;
+    }
+
+    .header_block_text_2 {
+        padding-left: 0px !important;
+    }
+
+}
+
+
+@media screen and (max-width: 1600px) and (min-width: 1200px) {
+
+    body .container {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    body .container{
+        width: 100%;
+    }
+    body{
+
+        margin: 0 auto !important;
+    }
+
+
+
+    #footer-id{
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 1199px) and (min-width: 950px) {
+
+
+    body .container {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    body .container{
+        width: 100%;
+    }
+    body{
+        margin: 0 auto !important;
+    }
+
+
+
+    #footer-id{
+        width: 90%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 660px) and (min-width: 320px) {
+    header #nav .container {
+        height: inherit;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+    #menuToggle
+    {
+        display: block ;
+        position: absolute;
+        top: 38px;
+        right: 10px;
+        cursor: pointer;
+        z-index: 1;
+
+        -webkit-user-select: none;
+        user-select: none;
+    }
+    #logo a{
+        width: 118px;
+    }
+
+    #menuToggle span
+    {
+
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+
+        background: #cdcdcd;
+        border-radius: 3px;
+
+        z-index: 1;
+
+        transform-origin: 4px 0px;
+
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+        background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+        opacity 0.55s ease;
+    }
+
+    .telephone-menu {
+        background: black;
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+        margin-top: 85px;
+        max-height: 0;
+        transition: max-height 1s ease-out;
+        overflow: hidden;
+        display: block !important;
+        font-family: 'Roboto',sans-serif;
+    }
+    .telephone-menu a {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px solid #cecece;
+        border-top: 1px solid #cecece;
+    }
+
+    .telephone-menu ul {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: left;
+        font-size: 30px;
+        letter-spacing: 0.1em;
+    }
+    .telephone-menu ul li {
+        padding: 25px 9px;
+        width: 100%;
+        height: 80px;
+        color: #e58636;
+        cursor: pointer;
+        font-size: 26px;
+
+    }
+
+    #socials{
+        display: none;
+    }
+
+    body{
+        width: 100%;
+    }
+
+    #nav{
+        display: block;
+    }
+
+
+
+    #menu{
+        display: none !important;
+    }
+
+
+    #drop_image{
+
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-left: 50px;
+
+    }
+
+
+    .header_block{
+        margin: 20px auto;
+    }
+
+
+
+    body .container{
+        width: 100%;
+    }
+    footer > .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header_block{
+        width: 100%;
+    }
+    .header_block_text_2{
+        padding-left: 0;
+    }
+
+
+
+    nav{
+        display: none;
+    }
+
+    .block_table_row{
+        flex-wrap: wrap;
+    }
+    .block_table_cell:nth-child(2){
+        width: auto;
+    }
+    .block_table_cell:nth-child(3){
+        margin-left: 0 !important;
+        width: 100%;
+    }
+    .block_table_cell a{
+        margin-left: 0;
+        margin-right: 30px;
+    }
+}
+
+
+

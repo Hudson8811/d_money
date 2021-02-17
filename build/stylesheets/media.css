@@ -84,10 +84,6 @@ main #mainContent > .container {
     /* width: calc(1400px + 20 * 10px); */
     width: 100%;
 }
-  header #nav .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
 
   main #toolBlock .blockContent {
     max-width: 1200px;
@@ -123,20 +119,8 @@ footer > .container > .flexer {
 }
 
 @media screen and (max-width: 660px) and (min-width: 320px) {
-    .block_table_row{
-        flex-wrap: wrap;
-    }
-    .block_table_cell:nth-child(2){
-        width: auto;
-    }
-    .block_table_cell:nth-child(3){
-        margin-left: 0 !important;
-        width: 100%;
-    }
-    .block_table_cell a{
-        margin-left: 0;
-        margin-right: 30px;
-    }
+
+
 
     main #mainContent > .container .mainBlock .mainContent {
         margin: 50px;
@@ -188,13 +172,10 @@ footer > .container > .flexer {
     header #welcome .container>.flexer .texts>p#second{
         font-size: 45px;
     }
+    #logo a {
+        width: 118px;
+    }
 
-    header #nav #nav_left > .flexer > div {
-        margin: 0 0px 0 5px;
-    }
-    header #nav #nav_left > .flexer #logo img, header #nav #nav_left > .flexer #csmoney img {
-        width: 90%;
-    }
     main #toolBlock .blockContent .list {
         flex-direction: column;
         justify-content: center;
@@ -330,10 +311,6 @@ footer > .container > .flexer {
     display: block !important;
     font-family: 'Roboto',sans-serif;
    }
-
-   header #nav #nav_right > .flexer #menu, header #nav #nav_right > .flexer #profile {
-     margin: 0 0;
-}
 
     .telephone-menu ul {
         height: 100%;
