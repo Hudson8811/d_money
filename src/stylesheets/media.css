@@ -30,6 +30,10 @@
     }
 }
 @media screen and (max-width: 1600px) and (min-width: 1200px) {
+    .page_container .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
     .trading-steps {
         display: grid;
         margin-left: 20% !important;
@@ -119,6 +123,21 @@ footer > .container > .flexer {
 }
 
 @media screen and (max-width: 660px) and (min-width: 320px) {
+    .block_table_row{
+        flex-wrap: wrap;
+    }
+    .block_table_cell:nth-child(2){
+        width: auto;
+    }
+    .block_table_cell:nth-child(3){
+        margin-left: 0 !important;
+        width: 100%;
+    }
+    .block_table_cell a{
+        margin-left: 0;
+        margin-right: 30px;
+    }
+
     main #mainContent > .container .mainBlock .mainContent {
         margin: 50px;
         min-height: 400px;
@@ -166,7 +185,9 @@ footer > .container > .flexer {
         -webkit-overflow-scrolling: touch;
     }
 
-
+    header #welcome .container>.flexer .texts>p#second{
+        font-size: 45px;
+    }
 
     header #nav #nav_left > .flexer > div {
         margin: 0 0px 0 5px;
@@ -225,7 +246,6 @@ footer > .container > .flexer {
 
     .close {
         position: absolute;
-        top: 5x;
         top: -2px;
         right: 10px;
         font-size: 32px;
@@ -315,59 +335,59 @@ footer > .container > .flexer {
      margin: 0 0;
 }
 
-.telephone-menu ul {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: left;
-    font-size: 30px;
-    letter-spacing: 0.1em;
-}
-.telephone-menu ul li {
-    padding: 25px 9px;
-    width: 100%;
-    height: 80px;
-    color: #e58636;
-    cursor: pointer;
-    font-size: 26px;
+    .telephone-menu ul {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: left;
+        font-size: 30px;
+        letter-spacing: 0.1em;
+    }
+    .telephone-menu ul li {
+        padding: 25px 9px;
+        width: 100%;
+        height: 80px;
+        color: #e58636;
+        cursor: pointer;
+        font-size: 26px;
 
-}
+    }
 
-main #trading_steps .blockContent .blockContainer {
-    width: 100%;
-    margin: 0 auto;
-}
+    main #trading_steps .blockContent .blockContainer {
+        width: 100%;
+        margin: 0 auto;
+    }
 
-main #trading_steps .blockContent .steps {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: -40px;
-}
+    main #trading_steps .blockContent .steps {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -40px;
+    }
 
-main #trading_steps .blockContent .steps .arrow {
-    width: 50px;
-    text-align: center;
-    margin-top: 20px;
-}
-main #trading_steps .blockContent .steps .step {
-margin: 10px 20px;
-}
+    main #trading_steps .blockContent .steps .arrow {
+        width: 50px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    main #trading_steps .blockContent .steps .step {
+    margin: 10px 20px;
+    }
 
-.telephone-menu a {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    border-bottom: 1px solid #cecece;
-}
+    .telephone-menu a {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px solid #cecece;
+    }
 
-#home-list{
-    border-bottom: 1px solid #cecece;
-    border-top: 0.5px solid #cecece;
-}
+    #home-list{
+        border-bottom: 1px solid #cecece;
+        border-top: 0.5px solid #cecece;
+    }
 
 }
 

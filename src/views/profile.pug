@@ -1,9 +1,75 @@
 extends layout
 
 block styles
-    link(rel="stylesheet", href="./stylesheets/faq.css")
-    link(rel="stylesheet", href="./stylesheets/faq-media.css")
+    link(rel="stylesheet", href="./stylesheets/style.css")
+    link(rel="stylesheet", href="./stylesheets/media.css")
 
 
 block content
-    p PROFILE
+    .page_container
+        .container
+            .profile
+                h1.profile_title Personal info
+                .profile_block.profile_block--one
+                    .profile_block_title Profile
+                    .profile_block_block
+                        .profile_block_logo
+                            img(src="")
+                        .profile_block_name Profile NAME
+                        .clear
+                        .block_table
+                            .block_table_row
+                                .block_table_cell Commissions:
+                                .block_table_cell 7%
+                                .block_table_cell
+                                    a(href="#") REDUCE COMMISSION
+                            .block_table_row
+                                .block_table_cell Registration:
+                                .block_table_cell 17.02.2021
+                            .block_table_row
+                                .block_table_cell Trades:
+                                .block_table_cell 4
+                .profile_block.profile_block--two
+                    .profile_block_title Profile
+                    .profile_block_block
+                        .profile_block_logo
+                            img(src="")
+                        .profile_block_name Profile NAME
+                        .clear
+                        .block_table
+                            .block_table_row
+                                .block_table_cell Commissions:
+                                .block_table_cell
+                                    input(value="asdfgjkhgjk;lsdfhgfhjlkl;dsfghjklsdfghj")
+                                    button.del_text
+                                        span.fa.fa-close
+                                .block_table_cell
+                                    a(href="#") GET THE LINK
+                                    a(href="#") APPLY
+                            .block_table_row
+                                .block_table_cell Registration:
+                                .block_table_cell 17.02.2021
+                .profile_block.profile_block--one
+                    .profile_block_title Profile
+                    .profile_block_block
+                        .profile_block_logo
+                            img(src="")
+                        .profile_block_name Profile NAME
+                        .clear
+                        .block_table
+                            .block_table_row
+                                .block_table_cell Email:
+                                .block_table_cell
+                                    span.gray Not
+                                .block_table_cell
+                                    a(href="#")
+                                        span.fa.fa-pencil
+                                    a(href="#")
+                                        span.fa.fa-trash
+                            .block_table_row
+                                .block_table_cell Telegram:
+                                .block_table_cell
+                                    span.gray Not
+
+
+
