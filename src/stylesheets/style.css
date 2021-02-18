@@ -407,13 +407,13 @@ footer {
 #positioning{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 
 .bot-filters{
     border-bottom: 1px solid rgb(154,134,246);
-    margin-top: 2em;
+    margin-top: 1em;
 }
 .bot-filters p{
     font-family: 'Oswald',sans-serif;
@@ -452,7 +452,7 @@ footer {
   position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 1em;
+    margin: 2em 0 0;
 }
 
 
@@ -524,7 +524,7 @@ footer {
     min-width: 180px;
     min-height: 50px;
     align-items: center;
-    margin-bottom: 5em;
+    margin-bottom: 1em;
 }
 .resetFilters p{
     color: #868297;
@@ -568,7 +568,7 @@ footer {
 .bonus{
     display: flex;
     flex-direction: column;
-    margin-top: 3em;
+    margin-top: 1em;
 }
 .bonus p:first-child{
     color: #9a86ec;
@@ -602,7 +602,6 @@ section{
 .range{
     display: flex;
     justify-content: center;
-    margin-top: 2em;
 }
 .slider.type2{
 	border-width: 1px;

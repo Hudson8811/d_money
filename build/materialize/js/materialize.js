@@ -10018,4 +10018,24 @@ if (Vel) {
 
     $.error('Method ' + methodOrOptions + ' does not exist on jQuery.tap-target');
   };
+
+  $('.header-list').click(function(e){
+    e.preventDefault();
+    $('.header-login-menu').toggleClass('is-active');
+  });
+
+  $('.header-bell').click(function(e){
+    e.preventDefault();
+    $('.verification').addClass('is-active');
+  });
+
+  $('.verification-close').click(function(e){
+    e.preventDefault();
+    $('.verification').removeClass('is-active');
+  });
+
+  $('.verification-overlay').click(function(e){
+    e.preventDefault();
+    $('.verification').removeClass('is-active');
+  });
 })(jQuery);

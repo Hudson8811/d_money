@@ -7,9 +7,17 @@ header.header-login
                         img(src="images/logo.png", alt="") 
             a.header-bell(href="#") 
                 <span class="material-icons">add_alert</span>
-            
-            a.header-list(href="#")
-                <span class="material-icons">view_list</span> 
+            .header-list-wrapper
+                a.header-list(href="#")
+                    <span class="material-icons">view_list</span>
+                .header-login-menu
+                    ul
+                        li
+                            a#home-list(href="/") Home
+                        li
+                            a(href="/") Bots
+                        li
+                            a(href="/faq") Faq
 
             a.header-lang(href="#")
                 <span class="material-icons">language</span>
@@ -24,3 +32,12 @@ header.header-login
             
             a.header-user
                 img(src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png", alt="")
+
+
+.verification 
+    .verification-overlay
+    form.verification-form 
+        .verification-close х
+        h2.verification-title Please verify your email for the free discounts
+        input(type="email", placeholder="EMAIL")
+        button VERIFY
