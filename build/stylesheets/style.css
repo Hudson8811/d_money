@@ -449,10 +449,12 @@ footer {
 }
 
 .range{
+  position: relative;
     display: flex;
     justify-content: center;
     margin-top: 1em;
 }
+
 
 .dash{
     display: flex;
@@ -607,10 +609,9 @@ section{
 	border-style: solid;
 	border-color: #1f2126;
 	border-radius: 25px;
-	width: 150px;
 	position: absolute;
 	height: 5px;
-
+  width: calc(100% - 30px);
 	left: 20px;
 }
 .type2 .ui-slider-handle{
@@ -1114,7 +1115,39 @@ header #welcome {
   position: relative;
 }
 
+main #mainContent > .container #main_left .mainBlock .mainHeader .headerRight .fa-refresh{
+    margin: 0 10px;
+}
 
+.bg select{
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  appearance: none;
+  color: #868297;
+  background-color: transparent;
+}
+.headerSearch::placeholder{
+  color: #fff;
+}
+.orderSelect select{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border:none;
+    outline:none;
+    color: #fff;
+    background-color: #9b86ed;
+    appearance: none;
+    font-family: 'Oswald',sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
 
-
-
+ main #mainContent > .container .mainBlock .mainHeader .orderSelect .dropArrow{
+  top: 7px;
+}

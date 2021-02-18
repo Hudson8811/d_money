@@ -135,13 +135,17 @@ block content
                         #begin.mainBlock(style="min-height: 800px;")
                             .mainHeader
                                 .headerLeft
-                                    input.headerSearch(type="text")
+                                    input.headerSearch(type="text", placeholder="Search")
                                 .headerRight
                                     ul.menu
-                                        li.item
-                                            a(href="#")
-                                                span.text order by
-                                                span.dropArrow.icon
+                                        li.item.orderSelect
+                                            select
+                                                option(value="1") Order by1
+                                                option(value="2") Order by2
+                                                option(value="3") Order by3
+                                                option(value="4") Order by4
+                                                option(value="5") Order by5
+                                            span.dropArrow.icon
                                         li.item
                                             a(href="#")
                                                 span.fa.fa-refresh
@@ -188,13 +192,28 @@ block content
                                     span.volume
                             .dash
                                 .bg
-                                    p Character
+                                    select
+                                        option(value="1") Character1
+                                        option(value="2") Character2
+                                        option(value="3") Character3
+                                        option(value="4") Character4
+                                        option(value="5") Character5
                                     img(src="images/plus.png" alt="Plus image")
                                 .bg
-                                    p Rarity
+                                    select
+                                        option(value="1") Rarity1
+                                        option(value="2") Rarity2
+                                        option(value="3") Rarity3
+                                        option(value="4") Rarity4
+                                        option(value="5") Rarity5
                                     img(src="images/arrowDown.png" alt="ArrowDown image")
                                 .bg
-                                    p Type
+                                    select
+                                        option(value="1") Type1
+                                        option(value="2") Type2
+                                        option(value="3") Type3
+                                        option(value="4") Type4
+                                        option(value="5") Type5
                                     img(src="images/arrowDown.png" alt="ArrowDown image")
                             .board
                                 .switcher
@@ -217,7 +236,12 @@ block content
                                     p Exalted
                                     p Inscribed
                             .moreFilters.bg.dash
-                                p More Filters
+                                select
+                                    option(value="1") More Filters1
+                                    option(value="2") More Filters2
+                                    option(value="3") More Filters3
+                                    option(value="4") More Filters4
+                                    option(value="5") More Filters5
                                 img(src="images/arrowDown.png" alt="ArrowDown image")
                             .resetFilters
                                 p RESET FILTERS
@@ -281,7 +305,7 @@ block content
                                 .headerLeft
                                     .title
                                         span.icon.fa.fa-refresh
-                                        |                                         refresh
+                                        span.text refresh
                                     .bots.drop.menu
                                         a(href="#")
                                             .text see all bots
