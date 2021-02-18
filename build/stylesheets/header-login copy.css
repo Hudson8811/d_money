@@ -1,0 +1,75 @@
+.header-login .container{align-items: center;}
+
+.header-bell{
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.header-lang{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+    margin-right: auto;
+    border-radius: 5px;
+    border: 2px solid #fff;
+}
+
+.header-lang i {
+    font-style: normal;
+    display: block;
+    margin: 0 5px;
+}
+
+.header-balance{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.header-balance .header-balance-text span{
+    font-size: 12px;
+    opacity: .8;
+}
+
+.header-balance .header-balance-text{
+    padding-right: 20px;
+}
+
+.header-balance .header-balance-text p {
+    font-size: 20px;
+}
+
+.header-balance .material-icons{
+    font-size: 30px;
+}
+
+.header-list{
+    display: block;
+    margin: 0 20px;
+}
+
+.header-user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.header-user img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}

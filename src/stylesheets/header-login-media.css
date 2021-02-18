@@ -1,0 +1,51 @@
+@media screen and (max-width:500px){
+
+    .header-lang{
+        padding: 5px 10px;
+        border: 1px solid #fff;
+    }
+
+    .header-balance{
+        padding: 5px 10px;
+        margin: 0 10px;
+    }
+
+    .header-balance .header-balance-text span{
+        font-size: 12px;
+        opacity: .8;
+    }
+
+    .header-balance .header-balance-text{
+        padding-right: 10px;
+    }
+
+    .header-balance .header-balance-text p {
+        font-size: 16px;
+    }
+
+    .header-balance .material-icons{
+        font-size: 20px;
+    }
+
+    .header-list{
+        display: block;
+        margin: 0 10px;
+    }
+
+    .header-user{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width:360px){
+
+    .header-lang p{
+        font-size: 12px;
+    }
+
+    .header-balance{
+        padding: 5px 5px;
+        margin: 0 5px;
+    }
+}

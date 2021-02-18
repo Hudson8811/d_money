@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title DOTA MONEY 2
+        link(href="https://fonts.googleapis.com/css?family=Open+Sans", rel="stylesheet")
+        link(rel="stylesheet", href="./stylesheets/nouislider.min.css")
+        block styles
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.5/socket.io.min.js", integrity="sha512-L9L4VhE0D58fCxtJiYDHbIzSVfNGY24rhQPWTZPschTVKLpucPsLeT0FSjfnylLYARalTQqgwXsjjhi+wUTwIw==", crossorigin="anonymous")
+        link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
+    body
+        include common/header-login
+        block content
+        include common/footer
+        include common/modals
+        script(src="scripts/wNumb.js")
+        script(src="scripts/nouislider.min.js")
+        script(src="materialize/js/materialize.js")
+        script(src="https://code.jquery.com/ui/1.10.3/jquery-ui.js")
+        script(src="scripts/script.js")
+        script(src="scripts/dnd.js")
+        script const socket = io('https://dota2money.ru:2053');socket.on('online', function (data) {$('#online').text(data + 70);});
