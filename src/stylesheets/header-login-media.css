@@ -1,4 +1,4 @@
-@media screen and (max-width:500px){
+@media screen and (max-width:768px){
 
     .header-lang{
         padding: 5px 10px;
@@ -38,7 +38,40 @@
     }
 }
 
-@media screen and (max-width:360px){
+@media screen and (max-width:500px){
+
+    .header-login .container{
+        flex-wrap: wrap;
+    }
+
+    header.header-login #nav{
+        height: 130px;
+    }
+
+    .header-login .flexer{
+        width: 70px;
+        height: 40px!important;
+    }
+
+    .header-login .flexer #logo{
+        width: 100%;
+    }
+
+    .header-login .flexer #logo a {
+        display: block;
+        width: 100%;
+    }
+
+    .header-login .flexer #logo a img{
+        display: block;
+        width: 100%;
+    }
+
+    .header-balance{
+        order: 1;
+        width: 100%;
+        margin: 0;
+    }
 
     .header-lang p{
         font-size: 12px;
@@ -47,5 +80,9 @@
     .header-balance{
         padding: 5px 5px;
         margin: 0 5px;
+    }
+
+    .header-user{
+        margin-left: 5px;
     }
 }

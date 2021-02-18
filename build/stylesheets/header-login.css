@@ -1,5 +1,5 @@
 .header-login .container{align-items: center;}
-
+.header-login .flexer{margin-right: auto;}
 .header-bell{
     display: block;
     width: 20px;
@@ -12,7 +12,6 @@
     justify-content: flex-start;
     align-items: center;
     padding: 10px 20px;
-    margin-right: auto;
     border-radius: 5px;
     border: 2px solid #fff;
 }
