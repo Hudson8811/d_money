@@ -4,7 +4,7 @@ mixin drag(count,title,price,href, name,used,slot,image)
             .stylesOfImg
                 div=title
                 .second-image
-                    img(id="dragelement"+count src=image ondragstart='dragStart(event)' alt=name)
+                    img(id="dragelement"+count src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcU2uxRKA0HfSeW_1MfsRFh1NQtZ-beqJQZy0Pv3ZjhD_NO42oXYx_KjarmFwGpSuJUk07GS9Nii21Hnr0ZpMGH7JITDcFI3MguF-FSggbC46lWktTs" ondragstart='dragStart(event)' alt=name)
                 div=price
         .hidden-cotainer
             .hover-div-hidden
@@ -19,3 +19,7 @@ mixin drag(count,title,price,href, name,used,slot,image)
         +drag(count,"title",val.lowest_price,href, val.trade_hash,"used","slot",val.image)
 
 
+    -count=0;
+    each val in boot_items
+        -count=count+1
+        +drag(count,"title",val.lowest_price,href, val.trade_hash,"used","slot",val.image)

@@ -132,14 +132,14 @@ block content
                                         | please, select your offered skin
                                     .icon
                                         img(src="images/drop.png" alt="drop image")
-                        #begin.mainBlock(style="min-height: 800px;")
+                        #begin.mainBlock
                             .mainHeader
                                 .headerLeft
                                     input.headerSearch(type="text", placeholder="Search")
                                 .headerRight
                                     ul.menu
                                         li.item.orderSelect
-                                            select
+                                            select.nice-select
                                                 option(value="1") Order by1
                                                 option(value="2") Order by2
                                                 option(value="3") Order by3
@@ -192,7 +192,7 @@ block content
                                     span.volume
                             .dash
                                 .bg
-                                    select
+                                    select.nice-select
                                         option(value="1") Character1
                                         option(value="2") Character2
                                         option(value="3") Character3
@@ -200,7 +200,7 @@ block content
                                         option(value="5") Character5
                                     img(src="images/plus.png" alt="Plus image")
                                 .bg
-                                    select
+                                    select.nice-select
                                         option(value="1") Rarity1
                                         option(value="2") Rarity2
                                         option(value="3") Rarity3
@@ -208,7 +208,7 @@ block content
                                         option(value="5") Rarity5
                                     img(src="images/arrowDown.png" alt="ArrowDown image")
                                 .bg
-                                    select
+                                    select.nice-select
                                         option(value="1") Type1
                                         option(value="2") Type2
                                         option(value="3") Type3
@@ -236,7 +236,7 @@ block content
                                     p Exalted
                                     p Inscribed
                             .moreFilters.bg.dash
-                                select
+                                select.nice-select
                                     option(value="1") More Filters1
                                     option(value="2") More Filters2
                                     option(value="3") More Filters3
@@ -300,7 +300,7 @@ block content
                                         | please, select your offered skin
                                     #hiddenIco.icon
                                         img(src="images/drop.png" alt="Drop image")
-                        #skins.mainBlock(style="min-height: 800px;")
+                        #skins.mainBlock(style="min-height: 754px;")
                             .mainHeader
                                 .headerLeft
                                     .title

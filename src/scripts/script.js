@@ -146,3 +146,4 @@ boxes.forEach(box => {
 })
 
 
+$('.nice-select').niceSelect();
