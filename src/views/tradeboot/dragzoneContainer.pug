@@ -1,17 +1,11 @@
 mixin drag(count,title,price,href, name,used,slot,image)
-    .dragzone
+    .dragzone(data-name=`${name}`, data-used=`Used By: ${used}`, data-slot=`Slot: ${slot}`)
         .imgPad
             .stylesOfImg
                 div=title
                 .second-image
                     img(id="dragelement"+count src=image ondragstart='dragStart(event)' alt=name)
                 div=price
-        .hidden-cotainer
-            .hover-div-hidden
-                div
-                    h1=name
-                    p="Used By: "+used
-                    p="Slot: "+slot
 #new_grid.mainContent.dragzoneContainer
     -count=0;
     each val in boot_items

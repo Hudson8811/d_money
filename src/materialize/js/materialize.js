@@ -10038,4 +10038,33 @@ if (Vel) {
     e.preventDefault();
     $('.verification').removeClass('is-active');
   });
+
+
+  $('.dragzone').mouseenter(function(e){
+    const $this = $(this);
+    const $item = $('#dragTooltip');
+    const dataName = $this.data('name');
+    const dataUsed = $this.data('used');
+    const dataSlot = $this.data('slot');
+    const name = $('#dragTooltip h3');
+    const used = $('#dragTooltip p:nth-child(2)');
+    const slot= $('#dragTooltip p:nth-child(3)');
+    const positionX = $this.offset().left;
+    const positionY = $this.offset().top;
+    name.html(dataName);
+    used.html(dataUsed);
+    slot.html(dataSlot);
+    $item.css({
+      left:`${positionX}px`,
+      top:`${positionY}px`,
+    })
+    $item.show(100);
+  });
+
+  $('#new_grid').mouseleave(function(e){
+    $('#dragTooltip').hide(100);
+  });
+  
+ 
+
 })(jQuery);
